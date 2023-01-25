@@ -1,3 +1,4 @@
 import Navbar from './navbar/Navbar';
+import DevelopperOnComputorLottie from './utils/DevelopperOnComputorLottie';
 
-export { Navbar };
+export { Navbar, DevelopperOnComputorLottie };
