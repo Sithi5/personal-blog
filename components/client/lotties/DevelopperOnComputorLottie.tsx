@@ -12,9 +12,5 @@ export default function DevelopperOnComputorLottie() {
         animationData: animationData,
     };
 
-    return (
-        <div>
-            <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
-        </div>
-    );
+    return <Lottie options={defaultOptions} isClickToPauseDisabled={true} />;
 }
