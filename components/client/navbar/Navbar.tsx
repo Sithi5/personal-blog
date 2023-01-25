@@ -19,7 +19,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className="z-50">
+        <div className="z-50 relative">
             <HorizontalBar
                 navbarLinksList={navbarLinksList}
                 handleVerticalNav={handleVerticalNav}

@@ -4,14 +4,14 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <div>
+        <div className="relative">
             <div className="pt-60 flex justify-center">
                 <div className="flex flex-row justify-around">
                     <div className="w-2/5 h-2/5">
                         <h1 className="text-7xl flex">
                             Hi all, i&apos;m Malo
                             <span
-                                className="animate-waving-hand pl-4"
+                                className="animate-waving-hand pl-4 z-0"
                                 role="img"
                                 aria-label="animate-waving-hand"
                             >
