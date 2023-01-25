@@ -38,7 +38,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                         <Image
                             src={cyberpunkAvatar}
                             width="87"
-                            height={35}
+                            height="35"
                             alt="/"
                         />
                         <div
@@ -49,7 +49,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                         </div>
                     </div>
                     <div className="border-b border-gray-300 my-4">
-                        <p className="w-10/12 md:w-11/12 py-4">Malo Boucé</p>
+                        <p className="w-[85%] md:w-[90%] py-4">Malo Boucé</p>
                     </div>
                     <ul className="py-4 flex flex-col">
                         {navbarLinksList.map(([title, url]) => (
@@ -64,7 +64,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                         <p className="uppercase tracking-widest text-indigo-500">
                             Let&apos;s Connect
                         </p>
-                        <ul className="flex items-center justify-between my-4 w-full sm:w-10/12">
+                        <ul className="flex items-center justify-between my-4 w-full sm:w-[85%]">
                             <li className="rounded-full shadow-lg shadow-gray-400 p-3 cursore-pointer hover:scale-105 ease-in duration-75">
                                 <Link
                                     target="_blank"

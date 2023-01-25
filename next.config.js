@@ -4,7 +4,12 @@ const nextConfig = {
         appDir: true,
     },
     images: {
-        domains: ['cdnjs.cloudflare.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**.cloudflare.com',
+            },
+        ],
     },
 };
 
