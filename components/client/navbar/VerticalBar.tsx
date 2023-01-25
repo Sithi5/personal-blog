@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
+import ContactLinks from '../utils/ContactLinks';
 
 type VerticalBarProps = {
     navbarLinksList: [string, string][];
@@ -64,29 +65,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                         <p className="uppercase tracking-widest text-indigo-500">
                             Let&apos;s Connect
                         </p>
-                        <ul className="flex items-center justify-between my-4 w-full sm:w-[85%]">
-                            <li className="rounded-full shadow-lg shadow-gray-400 p-3 cursore-pointer hover:scale-105 ease-in duration-75">
-                                <Link
-                                    target="_blank"
-                                    href="https://www.linkedin.com/in/malo-bouc%C3%A9/"
-                                >
-                                    <FaLinkedinIn size={25} />
-                                </Link>
-                            </li>
-                            <li className="rounded-full shadow-lg shadow-gray-400 p-3 cursore-pointer hover:scale-105 ease-in duration-75">
-                                <Link
-                                    target="_blank"
-                                    href="https://github.com/Sithi5"
-                                >
-                                    <AiFillGithub size={25} />
-                                </Link>
-                            </li>
-                            <li className="rounded-full shadow-lg shadow-gray-400 p-3 cursore-pointer hover:scale-105 ease-in duration-75">
-                                <Link href="mailto:ma.sithis@gmail.com">
-                                    <AiOutlineMail size={25} />
-                                </Link>
-                            </li>
-                        </ul>
+                        <ContactLinks />
                     </div>
                 </div>
             </div>

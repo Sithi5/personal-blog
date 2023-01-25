@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
     content: [
         './app/**/*.{html,js,ts,jsx,tsx}',
@@ -7,6 +8,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                lightgrey: '#f5f5f5',
+                grey: '#808080',
+            },
             keyframes: {
                 wave: {
                     '0%': { transform: 'rotate(0.0deg)' },

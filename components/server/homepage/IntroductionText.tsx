@@ -1,7 +1,7 @@
 import React from 'react';
 import { Emoji } from 'components/server';
 
-export default function HomePageIntroductionText() {
+export default function IntroductionText() {
     return (
         <div>
             <h1 className="tracking-wide text-4xl lg:text-7xl md:text-5xl flex">
@@ -15,7 +15,7 @@ export default function HomePageIntroductionText() {
                 </span>
             </h1>
 
-            <p className="tracking-normal text-gray-400 text-1xl lg:text-2xl  pt-8 lg:pt-12 font-light">
+            <p className="tracking-normal text-grey text-1xl lg:text-2xl pt-8 lg:pt-12 font-light">
                 A passionate Full Stack Software Developer{' '}
                 <Emoji symbol="🚀" label="rocket" /> having an experience of
                 building Web and Mobile applications with JavaScript / Reactjs /
