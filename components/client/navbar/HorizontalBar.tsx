@@ -15,7 +15,7 @@ export default function HorizontalBar(props: HorizontalBarProps) {
     const { navbarLinksList, handleVerticalNav } = props;
 
     return (
-        <div className="fixed w-full h-20 shadow-xl flex justify-between items-center px-2 2xl:px-16">
+        <div className="fixed w-full h-20 bg-white shadow-xl flex justify-between items-center px-2 2xl:px-16">
             <Image src={cyberpunkAvatar} alt="/" width="80" height="50" />
             <ul className="hidden md:flex ">
                 {navbarLinksList.map(([title, url]) => (
