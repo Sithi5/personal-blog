@@ -1,4 +1,4 @@
-import { Intro, WhatIDo } from 'components/server';
+import { Intro, WhatIDo, Education } from 'components/server';
 import React from 'react';
 
 export default function Home() {
@@ -10,6 +10,9 @@ export default function Home() {
                 </section>
                 <section className="h-screen w-screen">
                     <WhatIDo />
+                </section>
+                <section className="h-screen w-screen">
+                    <Education />
                 </section>
             </div>
         </div>

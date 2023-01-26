@@ -1,14 +1,14 @@
 import React from 'react';
-import { WhatIDoLottie, WhatIDoText } from 'components/client';
+import { EducationText } from 'components/client';
 
-export default function WhatIDo() {
+export default function Education() {
     return (
         <div className="flex flex-col lg:flex-row justify-around p-4  ">
             <div className="flex-1 px-8  max-h-[60%] ">
-                <WhatIDoLottie />
+                <EducationText />
             </div>
             <div className="flex-1 px-8">
-                <WhatIDoText />
+                <EducationText />
             </div>
         </div>
     );
