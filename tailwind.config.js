@@ -11,6 +11,7 @@ module.exports = {
             colors: {
                 lightgrey: '#f5f5f5',
                 grey: '#808080',
+                primary: '#6366F1',
             },
             keyframes: {
                 wave: {
@@ -23,9 +24,19 @@ module.exports = {
                     '60%': { transform: 'rotate(0.0deg)' },
                     '100%': { transform: 'rotate(0.0deg)' },
                 },
+                reveal: {
+                    '0%': {
+                        transform: 'translate(0,100%)',
+                    },
+                    '100%': {
+                        transform: 'translate(0,0)',
+                    },
+                },
             },
             animation: {
                 'waving-hand': 'wave 2s linear infinite ',
+                'reveal-block': 'reveal 2s linear',
+                'bounce-slow': 'bounce 2s infinite',
             },
         },
     },

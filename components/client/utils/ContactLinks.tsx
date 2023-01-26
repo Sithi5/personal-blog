@@ -25,7 +25,10 @@ export default function ContactLinks() {
                 </Link>
             </li>
             <li className="rounded-full shadow-lg shadow-gray-400 p-3 cursore-pointer hover:scale-105 ease-in duration-75">
-                <Link href="https://stackoverflow.com/users/10182580/sithis">
+                <Link
+                    target="_blank"
+                    href="https://stackoverflow.com/users/10182580/sithis"
+                >
                     <FaStackOverflow size={25} />
                 </Link>
             </li>

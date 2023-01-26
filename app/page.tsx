@@ -4,11 +4,11 @@ import React from 'react';
 export default function Home() {
     return (
         <div className="relative">
-            <div className="pt-60 flex justify-center flex-col">
-                <section>
+            <div className="pt-40 flex justify-center flex-col">
+                <section className="h-screen w-screen">
                     <Intro />
                 </section>
-                <section>
+                <section className="h-screen w-screen">
                     <WhatIDo />
                 </section>
             </div>

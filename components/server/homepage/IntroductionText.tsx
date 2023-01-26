@@ -4,7 +4,7 @@ import { Emoji } from 'components/server';
 export default function IntroductionText() {
     return (
         <div>
-            <h1 className="tracking-wide text-4xl lg:text-7xl md:text-5xl flex">
+            <h1 className="animate-bounce-slow tracking-wide text-4xl md:text-5xl lg:text-7xl flex">
                 Hi all, i&apos;m Malo
                 <span
                     className="animate-waving-hand pl-4 z-0"

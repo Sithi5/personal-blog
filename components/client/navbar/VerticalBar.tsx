@@ -62,7 +62,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                         ))}
                     </ul>
                     <div className="justify-self-end">
-                        <p className="uppercase tracking-widest text-indigo-500">
+                        <p className="uppercase tracking-widest text-primary">
                             Let&apos;s Connect
                         </p>
                         <ContactLinks />
