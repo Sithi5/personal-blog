@@ -1,14 +1,13 @@
 import React from 'react';
-import { DevelopperOnComputorLottie } from 'components/client';
+import { IntroLottie } from 'components/client';
 import IntroductionText from './IntroductionText';
-import ContactLinks from 'components/client/utils/ContactLinks';
-import { Suspense } from 'react';
+import ContactLinks from 'components/server/utils/ContactLinks';
 import ContactMeButtons from './ContactMeButtons';
 
 export default function Intro() {
     return (
-        <div className="flex flex-col lg:flex-row justify-around p-4  ">
-            <div className="flex-1 px-8 ">
+        <div className="animate-fade-in flex flex-col lg:flex-row justify-around p-4">
+            <div className=" flex-1 px-8 ">
                 <IntroductionText />
                 <div className="pt-8 lg:pt-12">
                     <ContactLinks />
@@ -18,7 +17,7 @@ export default function Intro() {
                 </div>
             </div>
             <div className="flex-1 px-8 max-h-[60%] ">
-                <DevelopperOnComputorLottie />
+                <IntroLottie />
             </div>
         </div>
     );

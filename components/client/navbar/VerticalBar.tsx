@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
-import ContactLinks from '../utils/ContactLinks';
+import ContactLinks from '../../server/utils/ContactLinks';
 
 type VerticalBarProps = {
     navbarLinksList: [string, string][];

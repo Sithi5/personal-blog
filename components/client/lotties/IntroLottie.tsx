@@ -3,9 +3,9 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import * as animationData from 'assets/lotties/developperOnComputor.json';
+import * as animationData from 'assets/lotties/IntroLottie.json';
 
-export default function DevelopperOnComputorLottie() {
+export default function IntroLottie() {
     const defaultOptions = {
         loop: true,
         autoplay: true,

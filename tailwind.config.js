@@ -24,18 +24,18 @@ module.exports = {
                     '60%': { transform: 'rotate(0.0deg)' },
                     '100%': { transform: 'rotate(0.0deg)' },
                 },
-                reveal: {
+                fadeIn: {
                     '0%': {
-                        transform: 'translate(0,100%)',
+                        opacity: '0',
                     },
                     '100%': {
-                        transform: 'translate(0,0)',
+                        opacity: '100',
                     },
                 },
             },
             animation: {
                 'waving-hand': 'wave 2s linear infinite ',
-                'reveal-block': 'reveal 2s linear',
+                'fade-in': 'fadeIn 1s linear',
                 'bounce-slow': 'bounce 2s infinite',
             },
         },
