@@ -7,6 +7,7 @@ import {
     SiC,
     SiCplusplus,
     SiGnubash,
+    SiNextdotjs,
     SiRust,
     SiTailwindcss,
     SiTypescript,
@@ -79,6 +80,11 @@ export default function WhatIDoStackIcons() {
                     ReactIcon={<FaPython size={50} />}
                     text={'Python'}
                     href="https://www.python.org/"
+                />
+                <ReactIconsWrapper
+                    ReactIcon={<SiNextdotjs size={50} />}
+                    text={'Next.js'}
+                    href="https://nextjs.org/"
                 />
                 <ReactIconsWrapper
                     ReactIcon={<FaReact size={50} />}
