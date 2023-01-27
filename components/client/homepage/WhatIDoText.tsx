@@ -127,13 +127,13 @@ function StackIcons() {
                     text={'MySQL'}
                     href="https://www.mysql.com/fr/"
                 />
+            </div>
+            <div className="flex items-center justify-center my-4 w-full sm:w-[85%]">
                 <ReactIconsWrapper
                     ReactIcon={<IoLogoFirebase size={50} />}
                     text={'Firebase'}
                     href="https://firebase.google.com/"
                 />
-            </div>
-            <div className="flex items-center justify-center my-4 w-full sm:w-[85%]">
                 <ReactIconsWrapper
                     ReactIcon={<SiC size={50} />}
                     text={'C'}
@@ -170,7 +170,6 @@ export default function WhatIDoText() {
             <h1 className="tracking-wide font-light text-3xl md:text-4x lg:text-6xl l flex">
                 What I do
             </h1>
-
             <p className="tracking-normal text-grey text-1xl lg:text-2xl pt-8 lg:pt-12 font-light">
                 CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
             </p>

@@ -1,8 +1,4 @@
-import PrimaryButtons from './buttons/PrimaryButtons';
-import Footer from './footer/Footer';
-import Education from './homepage/Education';
-import Intro from './homepage/Intro';
-import WhatIDo from './homepage/WhatIDo';
-import Emoji from './utils/Emoji';
-
-export { Emoji, Footer, Intro, WhatIDo, PrimaryButtons, Education };
+export * from './buttons';
+export * from './footer';
+export * from './homepage';
+export * from './utils';
