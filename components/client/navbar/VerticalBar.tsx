@@ -4,8 +4,7 @@ import cyberpunkAvatar from 'images/malo-avatar-cyberpunk.png';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineClose, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 import ContactLinks from '../../server/utils/ContactLinks';
 
 type VerticalBarProps = {
@@ -22,7 +21,7 @@ export default function VerticalBar(props: VerticalBarProps) {
             <div
                 className={
                     isVerticalNav
-                        ? 'fixed left-0 top-0 w-full h-screen bg-black/30'
+                        ? 'fixed left-0 top-0 w-full h-full bg-black/30'
                         : 'hidden'
                 }
                 onClick={handleVerticalNav}

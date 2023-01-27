@@ -14,14 +14,12 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
             <head />
-            <body>
+            <body className="relative min-h-screen">
                 <header>
                     <Navbar />
                 </header>
                 <main>{children}</main>
-                <footer>
-                    <Footer />
-                </footer>
+                <Footer />
             </body>
         </html>
     );

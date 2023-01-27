@@ -1,14 +1,19 @@
 import React from 'react';
-import { WhatIDoLottie, WhatIDoText } from 'components/client';
+import {
+    WhatIDoLottie,
+    WhatIDoStackIcons,
+    WhatIDoText,
+} from 'components/client';
 
 export default function WhatIDo() {
     return (
-        <div className="flex flex-col lg:flex-row justify-around p-4  ">
-            <div className="flex-1 px-8  max-h-[60%] ">
-                <WhatIDoLottie />
-            </div>
-            <div className="flex-1 px-8">
+        <div className="flex flex-col lg:flex-row  p-4">
+            <div className="flex-1 justify-center lg:order-2">
                 <WhatIDoText />
+                <WhatIDoStackIcons />
+            </div>
+            <div className="flex-1 flex justify-center  px-4 lg:px-8 lg:order-1">
+                <WhatIDoLottie />
             </div>
         </div>
     );
