@@ -14,7 +14,7 @@ export default function IntroductionText() {
                     👋
                 </span>
             </h1>
-            <p className="tracking-normal text-grey text-1xl lg:text-2xl pt-8 lg:pt-12 font-light">
+            <p className="tracking-normal text-grey text-1xl md:text-2xl lg:text-3xl pt-8 lg:pt-12 font-light">
                 A passionate Full Stack Software Developer{' '}
                 <Emoji symbol="🚀" label="rocket" /> having an experience of
                 building Web and Mobile applications with TypeScript / Reactjs /

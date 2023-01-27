@@ -4,11 +4,11 @@ import PrimaryButtons from '../buttons/PrimaryButtons';
 
 export default function ContactMeButtons() {
     return (
-        <div className="flex items-center justify-evenly my-4 w-full">
-            <Link href="#contact-me">
+        <div className="flex justify-around lg:justify-start">
+            <Link href="#contact-me" className="pl-4">
                 <PrimaryButtons text="contact me" />
             </Link>
-            <Link href="#see-my-resume">
+            <Link href="#see-my-resume" className="pl-4">
                 <PrimaryButtons text="see my resume" />
             </Link>
         </div>

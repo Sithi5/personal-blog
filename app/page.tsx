@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <div className="pt-32 flex justify-center flex-col">
+        <div className="pt-28 flex justify-center flex-col">
             <section>
                 <Intro />
             </section>
