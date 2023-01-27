@@ -3,8 +3,8 @@ import { Emoji } from 'components/server';
 
 export default function IntroductionText() {
     return (
-        <div>
-            <h1 className="animate-bounce-slow tracking-wide text-4xl md:text-5xl lg:text-7xl">
+        <>
+            <h1 className="flex animate-bounce-slow tracking-wide text-4xl md:text-5xl lg:text-7xl">
                 Hi all, i&apos;m Malo
                 <span
                     className="animate-waving-hand pl-4 z-0"
@@ -21,6 +21,6 @@ export default function IntroductionText() {
                 Next.js / Nodejs / React Native and some other cool libraries
                 and frameworks.
             </p>
-        </div>
+        </>
     );
 }

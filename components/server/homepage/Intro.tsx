@@ -8,7 +8,7 @@ export default function Intro() {
     return (
         <div className="animate-fade-in flex flex-col lg:flex-row justify-around p-4">
             <div className="flex-1 flex flex-col justify-center">
-                <div className="px-4 lg:px-8 ">
+                <div className="px-4 lg:px-8 flex flex-col">
                     <IntroductionText />
                     <div className="pt-8 lg:pt-12">
                         <ContactLinks />

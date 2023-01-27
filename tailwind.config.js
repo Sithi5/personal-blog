@@ -32,11 +32,21 @@ module.exports = {
                         opacity: '100',
                     },
                 },
+                fillProgressBarWidth: {
+                    '0%': { width: '70%' },
+                    '100%': { width: '100%' },
+                },
+                emptyProgressBarWidth: {
+                    '0%': { width: '100%' },
+                    '100%': { width: '70%' },
+                },
             },
             animation: {
                 'waving-hand': 'wave 2s linear infinite ',
                 'fade-in': 'fadeIn 1s linear',
                 'bounce-slow': 'bounce 2s infinite',
+                'fill-progress-bar': 'fillProgressBarWidth 0.5s linear',
+                'empty-progress-bar': 'emptyProgressBarWidth 0.5s linear',
             },
         },
     },
