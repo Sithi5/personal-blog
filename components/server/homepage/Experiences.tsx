@@ -86,7 +86,7 @@ export default function Experiences() {
     return (
         <div className="flex flex-col justify-center p-4  w-full animate-fade-in ">
             <h2 className="">Experiences</h2>
-            <div className="flex justify-between lg:flex-row flex-col">
+            <div className="flex justify-evenly lg:flex-row flex-col flex-wrap">
                 <ExperienceCard
                     title="DirectBrico"
                     jobTitle="Engineering Manager"
