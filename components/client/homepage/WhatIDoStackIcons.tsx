@@ -54,8 +54,8 @@ function ReactIconsWrapper(props: ReactIconsWrapperProps) {
 
 export default function WhatIDoStackIcons() {
     return (
-        <Slide triggerOnce direction="right">
-            <ul className="flex items-center justify-center my-4 flex-wrap">
+        <Slide triggerOnce cascade damping={0.02} direction="up">
+            <ul className="flex items-center justify-center my-4 flex-wrap w-full">
                 <ReactIconsWrapper
                     ReactIcon={<SiTypescript size={50} />}
                     text={'TypeScript'}

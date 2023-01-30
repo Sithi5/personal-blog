@@ -27,13 +27,12 @@ export default function EducationBlock(props: EducationBlockProps) {
                     setHover(false);
                 }}
             >
-                <div className="flex flex-row">
+                <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-start">
                     <Image
                         src={svgImage}
                         alt="42-logo"
                         height={100}
                         width={100}
-                        className=" rounded-xl"
                     />
                     <div className="flex flex-col p-4">
                         <h3 className="tracking-normal text-2xl lg:text-3xl pt-0 lg:pt-4 font-normal">
@@ -56,7 +55,9 @@ export default function EducationBlock(props: EducationBlockProps) {
                 <div
                     className={
                         'bg-gray-200 h-[2px] transition-width duration-700 ease-in-out ' +
-                        (hover ? ' bg-primary max-w-[100%]  ' : 'max-w-[70%]')
+                        (hover
+                            ? ' bg-primary max-w-[100%]  '
+                            : 'lg:max-w-[70%]')
                     }
                 ></div>
             </div>

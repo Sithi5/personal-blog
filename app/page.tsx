@@ -1,16 +1,19 @@
-import { Intro, WhatIDo, Education } from 'components/server';
+import { Intro, WhatIDo, Education, Proficiency } from 'components/server';
 import React from 'react';
 
 export default function Home() {
     return (
-        <div className="pt-28 flex justify-center flex-col">
-            <section>
+        <div className="flex justify-center flex-col">
+            <section className="pt-28 ">
                 <Intro />
             </section>
-            <section>
+            <section className="lg:pt-4">
                 <WhatIDo />
             </section>
-            <section>
+            <section className="lg:pt-4">
+                <Proficiency />
+            </section>
+            <section className="lg:pt-4">
                 <Education />
             </section>
         </div>
