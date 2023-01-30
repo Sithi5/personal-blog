@@ -11,7 +11,9 @@ export default function Education() {
             <div className="flex-1 px-8">
                 <EducationBlock
                     title={'42 Paris'}
-                    schoolDescription={'Master of Science in Computer Science'}
+                    schoolDescription={
+                        "Master's degree (RNCP level 7) in Computer Science"
+                    }
                     description={
                         '• Algorithmic and AI\n' +
                         '• Security project\n' +

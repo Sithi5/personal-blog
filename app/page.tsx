@@ -1,4 +1,10 @@
-import { Intro, WhatIDo, Education, Proficiency } from 'components/server';
+import {
+    Intro,
+    WhatIDo,
+    Education,
+    Proficiency,
+    Experiences,
+} from 'components/server';
 import React from 'react';
 
 export default function Home() {
@@ -12,6 +18,9 @@ export default function Home() {
             </section>
             <section className="lg:pt-4">
                 <Proficiency />
+            </section>
+            <section className="lg:pt-4">
+                <Experiences />
             </section>
             <section className="lg:pt-4">
                 <Education />

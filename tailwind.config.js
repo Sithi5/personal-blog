@@ -12,6 +12,12 @@ module.exports = {
                 lightgrey: '#D3D3D3',
                 grey: '#808080',
                 primary: '#6366F1',
+                darkGreenDirectBricoColor: '#244503',
+                pastelGreenDirectBricoColor: '#b5ffb0',
+                redDirectBricoColor: '#C51B40',
+                blueParsecColor: '#006EFF',
+                orangeMangalib: '#ff7400',
+                blueDirectBricoColor: '#5ed1ff',
             },
             keyframes: {
                 wave: {
