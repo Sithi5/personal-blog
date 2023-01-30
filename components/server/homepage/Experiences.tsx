@@ -66,17 +66,16 @@ function ExperienceCard(props: ExperienceCardProps) {
 
                 <p className="p-4 break-words w-full text-grey">
                     {companyDescription}
-
-                    <p className="px-4 pt-4">
-                        {missionDescription.split('\n').map((item, key) => {
-                            return (
-                                <React.Fragment key={key}>
-                                    {item}
-                                    <br />
-                                </React.Fragment>
-                            );
-                        })}
-                    </p>
+                </p>
+                <p className="px-4 pt-4">
+                    {missionDescription.split('\n').map((item, key) => {
+                        return (
+                            <React.Fragment key={key}>
+                                {item}
+                                <br />
+                            </React.Fragment>
+                        );
+                    })}
                 </p>
             </div>
         </Link>
