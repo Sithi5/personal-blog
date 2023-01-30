@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaStackOverflow } from 'react-icons/fa';
 
 export default function ContactLinks() {
     return (
-        <ul className="flex items-center justify-around w-full sm:w-[85%]">
+        <ul className="flex items-center justify-around w-full">
             <li className="rounded-full shadow-lg shadow-gray-400 p-3 cursore-pointer hover:scale-105 ease-in duration-75">
                 <Link
                     target="_blank"

@@ -9,6 +9,7 @@ export default function WhatIDo() {
     return (
         <div className="flex flex-col lg:flex-row  p-4">
             <div className="flex-1 justify-center lg:order-2">
+                <h2 className="tracking-wide font-normal ">What I do</h2>
                 <WhatIDoText />
                 <WhatIDoStackIcons />
             </div>

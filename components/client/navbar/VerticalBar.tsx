@@ -64,7 +64,9 @@ export default function VerticalBar(props: VerticalBarProps) {
                         <p className="uppercase tracking-widest text-primary">
                             Let&apos;s Connect
                         </p>
-                        <ContactLinks />
+                        <div className="pt-4">
+                            <ContactLinks />
+                        </div>
                     </div>
                 </div>
             </div>

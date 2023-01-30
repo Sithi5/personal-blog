@@ -7,7 +7,6 @@ export default function Home() {
             <section>
                 <Intro />
             </section>
-
             <section>
                 <WhatIDo />
             </section>

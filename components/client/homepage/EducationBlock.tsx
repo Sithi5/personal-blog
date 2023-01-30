@@ -5,15 +5,16 @@ import { Slide } from 'react-awesome-reveal';
 import Image from 'next/image';
 
 type EducationBlockProps = {
-    cursus: string;
+    schoolDescription: string;
     title: string;
     period: string;
     description: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     svgImage: any;
 };
 
 export default function EducationBlock(props: EducationBlockProps) {
-    const { cursus, title, period, description, svgImage } = props;
+    const { schoolDescription, title, period, description, svgImage } = props;
     const [hover, setHover] = useState(false);
 
     return (
@@ -35,26 +36,29 @@ export default function EducationBlock(props: EducationBlockProps) {
                         className=" rounded-xl"
                     />
                     <div className="flex flex-col p-4">
-                        <h3 className="tracking-normal text-grey text-1xl lg:text-2xl pt-8 lg:pt-12 font-light">
+                        <h3 className="tracking-normal text-2xl lg:text-3xl pt-0 lg:pt-4 font-normal">
                             {title}
                         </h3>
-                        <h4>{cursus}</h4>
-                        <h5>{period}</h5>
-                        <p>{description}</p>
+                        <h4>{schoolDescription}</h4>
+                        <p className="italic font-light ">{period}</p>
+                        <p className="pl-4 text-grey">
+                            {description.split('\n').map((item, key) => {
+                                return (
+                                    <React.Fragment key={key}>
+                                        {item}
+                                        <br />
+                                    </React.Fragment>
+                                );
+                            })}
+                        </p>
                     </div>
                 </div>
                 <div
                     className={
-                        'bg-gray-200 h-[2px]  ' +
-                        (hover
-                            ? 'animate-fill-progress-bar w-[100%]'
-                            : 'animate-empty-progress-bar w-[70%]')
+                        'bg-gray-200 h-[2px] transition-width duration-700 ease-in-out ' +
+                        (hover ? ' bg-primary max-w-[100%]  ' : 'max-w-[70%]')
                     }
-                >
-                    <div
-                        className={hover ? 'bg-primary h-[2px] w-[100%]' : ''}
-                    ></div>
-                </div>
+                ></div>
             </div>
         </Slide>
     );
