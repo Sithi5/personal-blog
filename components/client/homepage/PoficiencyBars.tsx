@@ -17,7 +17,7 @@ export default function PoficiencyBars() {
                 <p className="pb-4 text-grey">Frontend/Design</p>
                 <div className="h-4  bg-lightgrey rounded-xl">
                     <div
-                        className={'w-[60%] h-full bg-primary rounded-xl'}
+                        className={'w-[70%] h-full bg-primary rounded-xl'}
                     ></div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ export default function PoficiencyBars() {
                 <p className="pb-4 text-grey">Pipelines/Deployment</p>
                 <div className="h-4  bg-lightgrey rounded-xl">
                     <div
-                        className={'w-[40%] h-full bg-primary rounded-xl'}
+                        className={'w-[50%] h-full bg-primary rounded-xl'}
                     ></div>
                 </div>
             </div>

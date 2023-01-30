@@ -34,7 +34,7 @@ function ExperienceCard(props: ExperienceCardProps) {
     return (
         <Link
             href={href}
-            className="w-[30%] h-[590px] bg-white rounded-lg shadow-2xl"
+            className="mt-4 lg:mt-0 w-full lg:w-[30%] h-[590px] bg-white rounded-lg shadow-2xl"
             target="_blank"
         >
             <div
@@ -87,7 +87,7 @@ export default function Experiences() {
     return (
         <div className="flex flex-col justify-center p-4  w-full animate-fade-in ">
             <h2 className="">Experiences</h2>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:flex-row flex-col">
                 <ExperienceCard
                     title="DirectBrico"
                     jobTitle="Engineering Manager"
