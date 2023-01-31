@@ -14,7 +14,7 @@ export default function ProficiencyLottie() {
     };
 
     return (
-        <Slide triggerOnce direction="right">
+        <Slide triggerOnce direction="up">
             <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
         </Slide>
     );
