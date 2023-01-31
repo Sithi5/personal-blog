@@ -1,8 +1,8 @@
 import React from 'react';
 import { IntroLottie } from 'components/client';
 import IntroductionText from './IntroductionText';
-import ContactLinks from 'components/server/utils/ContactLinks';
 import ContactMeButtons from './ContactMeButtons';
+import { ContactLinks } from 'components/server';
 
 export default function Intro() {
     return (

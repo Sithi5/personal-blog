@@ -1,6 +1,6 @@
 import EducationBlock from './EducationBlock';
 import ExperienceCardsSlide from './ExperienceCardsSlide';
-import PoficiencyBars from './PoficiencyBars';
+import ProficiencyBars from './ProficiencyBars';
 import ProjectsCardsSlide from './ProjectsCardsSlide';
 import WhatIDoStackIcons from './WhatIDoStackIcons';
 import WhatIDoText from './WhatIDoText';
@@ -9,7 +9,7 @@ export {
     EducationBlock,
     WhatIDoText,
     WhatIDoStackIcons,
-    PoficiencyBars,
+    ProficiencyBars,
     ExperienceCardsSlide,
     ProjectsCardsSlide,
 };

@@ -16,9 +16,9 @@ export default function HorizontalBar(props: HorizontalBarProps) {
 
     return (
         <div className="fixed w-full h-20 bg-white shadow-xl flex justify-between items-center px-2 2xl:px-16">
-            <Link href="/">
+            <a href="/">
                 <Image src={PandaAvatar} alt="/" width="80" height="50" />
-            </Link>
+            </a>
 
             <ul className="hidden md:flex pr-4">
                 {navbarLinksList.map(([title, url]) => (

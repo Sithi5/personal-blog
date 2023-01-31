@@ -10,6 +10,7 @@ const navbarLinksList: [string, string][] = [
     ['Experiences', '#experiences'],
     ['Projects', '#projects'],
     ['Education', '#education'],
+    ['Contact Me', '#contact-me'],
 ];
 
 export default function Navbar() {

@@ -1,5 +1,6 @@
+import ContactMeLottie from './ContactMeLottie';
 import IntroLottie from './IntroLottie';
 import ProficiencyLottie from './ProficiencyLottie';
 import WhatIDoLottie from './WhatIDoLottie';
 
-export { IntroLottie, WhatIDoLottie, ProficiencyLottie };
+export { IntroLottie, WhatIDoLottie, ProficiencyLottie, ContactMeLottie };

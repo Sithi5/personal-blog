@@ -2,7 +2,7 @@
 
 import { Slide } from 'react-awesome-reveal';
 
-export default function PoficiencyBars() {
+export default function ProficiencyBars() {
     return (
         <Slide triggerOnce cascade damping={0.02} direction="left">
             <div className="px-4 pt-4">
