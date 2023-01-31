@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
+    darkMode: 'class',
     content: [
         './app/**/*.{html,js,ts,jsx,tsx}',
         './components/**/*.{html,js,ts,jsx,tsx}',
@@ -18,6 +19,7 @@ module.exports = {
                 blueParsecColor: '#006EFF',
                 orangeMangalib: '#ff7400',
                 blueDirectBricoColor: '#5ed1ff',
+                darkBackgroundColor: '#3e3e42',
             },
             keyframes: {
                 wave: {

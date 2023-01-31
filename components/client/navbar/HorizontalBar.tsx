@@ -5,6 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { DarkModeToggle } from 'components/client/';
 
 type HorizontalBarProps = {
     navbarLinksList: [string, string][];
@@ -31,6 +32,7 @@ export default function HorizontalBar(props: HorizontalBarProps) {
                         </a>
                     </>
                 ))}
+                <DarkModeToggle />
             </ul>
             <div onClick={handleVerticalNav} className="md:hidden">
                 <AiOutlineMenu size={25} />

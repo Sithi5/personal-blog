@@ -1,3 +1,4 @@
+import DarkModeToggle from './DarkModeToggle';
 import ScrollToTopButton from './ScrollToTopButton';
 
-export { ScrollToTopButton };
+export { ScrollToTopButton, DarkModeToggle };

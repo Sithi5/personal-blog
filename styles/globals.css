@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply tracking-wide;
+        @apply tracking-wide dark:bg-darkBackgroundColor;
     }
 
     h1,
