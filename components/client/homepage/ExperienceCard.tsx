@@ -34,7 +34,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
         <Link
             href={href}
             target="_blank"
-            className="mt-4 lg:mt-0 w-full lg:w-[30%] h-[590px] bg-white rounded-lg shadow-2xl"
+            className="mt-4 lg:mt-0 w-full lg:w-[30%] h-[590px] bg-white rounded-lg shadow-2xl hover:scale-105 ease-in duration-75"
         >
             <div
                 className={

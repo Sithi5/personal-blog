@@ -7,7 +7,7 @@ import UniversityOfMacauLogo from 'assets/logos/university-of-macau-logo.svg';
 export default function Education() {
     return (
         <div className="flex flex-col justify-around p-4">
-            <h2 className="">Education</h2>
+            <h2>Education</h2>
             <div className="flex-1 px-8">
                 <EducationBlock
                     title={'42 Paris'}

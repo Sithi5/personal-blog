@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="566"
+	height="566"
+	viewBox="-3 -3 566 566">
+	<title>Gomoku Game 2</title>
+	<defs>
+		<linearGradient id="LinearGradientWhite">
+			<stop style="stop-color:white;stop-opacity:1" offset="0" />
+			<stop style="stop-color:#e6e6e6;stop-opacity:1" offset="0.75" />
+			<stop style="stop-color:#ccc;stop-opacity:1" offset="1" />
+		</linearGradient>
+		<linearGradient id="LinearGradientBlack">
+			<stop style="stop-color:#ccc;stop-opacity:1" offset="0" />
+			<stop style="stop-color:black;stop-opacity:1" offset="1" />
+		</linearGradient>
+		<linearGradient id="LinearGradientShadow">
+			<stop style="stop-color:black;stop-opacity:1" offset="0" />
+			<stop style="stop-color:black;stop-opacity:0.5" offset="0.9" />
+			<stop style="stop-color:black;stop-opacity:0" offset="1" />
+		</linearGradient>
+		<radialGradient id="RadialGradientWhite" xlink:href="#LinearGradientWhite"
+			cx="0" cy="0" r="20" fx="-12" fy="-12" gradientUnits="userSpaceOnUse" />
+		<radialGradient id="RadialGradientBlack" xlink:href="#LinearGradientBlack"
+			cx="0" cy="0" r="20" fx="-12" fy="-12" gradientUnits="userSpaceOnUse" />
+		<radialGradient id="RadialGradientShadow" xlink:href="#LinearGradientShadow"
+			cx="2" cy="2" r="20" fx="2" fy="2" gradientUnits="userSpaceOnUse" />
+		<circle id="BlackShadow" cx="2" cy="2" r="20" style="fill:url(#RadialGradientShadow);stroke:none" />
+		<g id="Black01">
+			<use xlink:href="#BlackShadow" x="0" y="0" />
+			<circle cx="0" cy="0" r="20" style="fill:url(#RadialGradientBlack);fill-opacity:1;stroke:none" />
+		</g>
+		<g id="White01">
+			<use xlink:href="#BlackShadow" />
+			<circle cx="0" cy="0" r="20" style="fill:url(#RadialGradientWhite);fill-opacity:1;stroke:none" />
+		</g>
+	</defs>
+	<rect width="560" height="560" x="0" y="0"
+		style="fill:#f4f0dc;stroke:black;stroke-width:2;stroke-miterlimit:4" />
+	<path id="Gridz"
+		d="M 0,40 H 560 M 0,80 H 560 M 0,120 H 560 M 0,160 H 560 M 0,200 H 560 M 0,240 H 560 M 0,280 H 560 M 0,320 H 560 M 0,360 H 560 560 M 0,400 H 560 M 0,440 H 560 M 0,480 H 560 M 0,520 H 560"
+		style="fill:none;stroke:black;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4" />
+	<use xlink:href="#Gridz" transform="matrix(0,-1,1,0,0,560)" />
+	<use xlink:href="#Black01" transform="translate(280,120)" />
+	<use xlink:href="#White01" transform="translate(160,160)" />
+	<use xlink:href="#Black01" transform="translate(240,160)" />
+	<use xlink:href="#White01" transform="translate(280,160)" />
+	<use xlink:href="#White01" transform="translate(400,160)" />
+	<use xlink:href="#Black01" transform="translate(200,200)" />
+	<use xlink:href="#Black01" transform="translate(280,200)" />
+	<use xlink:href="#Black01" transform="translate(360,200)" />
+	<use xlink:href="#Black01" transform="translate(160,240)" />
+	<use xlink:href="#White01" transform="translate(200,240)" />
+	<use xlink:href="#Black01" transform="translate(240,240)" />
+	<use xlink:href="#Black01" transform="translate(280,240)" />
+	<use xlink:href="#Black01" transform="translate(320,240)" />
+	<use xlink:href="#White01" transform="translate(360,240)" />
+	<use xlink:href="#Black01" transform="translate(120,280)" />
+	<use xlink:href="#White01" transform="translate(200,280)" />
+	<use xlink:href="#White01" transform="translate(240,280)" />
+	<use xlink:href="#Black01" transform="translate(280,280)" />
+	<use xlink:href="#White01" transform="translate(320,280)" />
+	<use xlink:href="#White01" transform="translate(360,280)" />
+	<use xlink:href="#White01" transform="translate(80,320)" />
+	<use xlink:href="#White01" transform="translate(200,320)" />
+	<use xlink:href="#Black01" transform="translate(240,320)" />
+	<use xlink:href="#Black01" transform="translate(280,320)" />
+	<use xlink:href="#Black01" transform="translate(320,320)" />
+	<use xlink:href="#White01" transform="translate(360,320)" />
+	<use xlink:href="#White01" transform="translate(200,360)" />
+	<use xlink:href="#Black01" transform="translate(240,360)" />
+	<use xlink:href="#White01" transform="translate(280,360)" />
+	<use xlink:href="#White01" transform="translate(360,360)" />
+	<use xlink:href="#White01" transform="translate(160,400)" />
+	<use xlink:href="#Black01" transform="translate(200,400)" />
+	<use xlink:href="#Black01" transform="translate(240,400)" />
+	<use xlink:href="#Black01" transform="translate(280,400)" />
+	<use xlink:href="#White01" transform="translate(320,400)" />
+	<use xlink:href="#Black01" transform="translate(360,400)" />
+	<use xlink:href="#White01" transform="translate(240,440)" />
+	<g id="Texts"
+		style="font-size:20px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;stroke:none;font-family:Liberation Sans,Arial,sans-serif">
+		<g id="BlackTexts" style="fill:black">
+			<text	x="148.83301"	y="166.9">28</text>
+			<text	x="268.88672"	y="166.9">26</text>
+			<text	x="388.5791"	y="166.9">24</text>
+			<text	x="188.69629"	y="246.9">34</text>
+			<text	x="348.92578"	y="246.9">22</text>
+			<text	x="349.05273"	y="286.9">30</text>
+			<text	x="69.003906"	y="326.9">36</text>
+			<text	x="309.04297"	y="406.9">32</text>
+		</g>
+		<g id="WhiteTexts" style="fill:white">
+			<text	x="269.08203"	y="126.9">37</text>
+			<text	x="228.89648"	y="166.9">29</text>
+			<text	x="188.96484"	y="206.9">27</text>
+			<text	x="268.80371"	y="206.9">25</text>
+			<text	x="349.88672"	y="207.9">23</text>
+			<text	x="149.00391"	y="246.9">33</text>
+			<text	x="108.9209"	y="286.9">35</text>
+			<text	x="348.9209"	y="406.9">31</text>
+			</g>
+	</g>
+</svg>
