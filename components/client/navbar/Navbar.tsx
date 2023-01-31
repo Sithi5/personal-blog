@@ -6,9 +6,10 @@ import VerticalBar from './VerticalBar';
 
 const navbarLinksList: [string, string][] = [
     ['Home', '/'],
-    ['About', '/about'],
-    ['Skills', '/skills'],
-    ['Projects', '/projects'],
+    ['Skills', '#skills'],
+    ['Experiences', '#experiences'],
+    ['Projects', '#projects'],
+    ['Education', '#education'],
 ];
 
 export default function Navbar() {

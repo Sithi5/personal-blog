@@ -13,16 +13,19 @@ export default function Home() {
             <section className="pt-28 ">
                 <Intro />
             </section>
-            <section className="lg:pt-4">
+            <section id="skills" className="lg:pt-4">
                 <WhatIDo />
             </section>
             <section className="lg:pt-4">
                 <Proficiency />
             </section>
-            <section className="lg:pt-4">
+            <section id="experiences" className="lg:pt-4">
                 <Experiences />
             </section>
-            <section className="lg:pt-4">
+            <section id="projects" className="lg:pt-4">
+                <Projects />
+            </section>
+            <section id="education" className="lg:pt-4">
                 <Education />
             </section>
         </div>

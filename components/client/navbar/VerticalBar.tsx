@@ -1,6 +1,6 @@
 'use client';
 
-import cyberpunkAvatar from 'images/malo-avatar-cyberpunk.png';
+import PandaAvatar from 'assets/images/panda-avatar.svg';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -35,12 +35,14 @@ export default function VerticalBar(props: VerticalBarProps) {
             >
                 <div className="h-full p-10 flex flex-col justify-around">
                     <div className="flex w-full items-center justify-between">
-                        <Image
-                            src={cyberpunkAvatar}
-                            width="87"
-                            height="35"
-                            alt="/"
-                        />
+                        <Link href="/">
+                            <Image
+                                src={PandaAvatar}
+                                width="87"
+                                height="35"
+                                alt="/"
+                            />
+                        </Link>
                         <div
                             onClick={handleVerticalNav}
                             className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
