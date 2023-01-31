@@ -1,4 +1,4 @@
-import { Navbar } from 'components/client/';
+import { Navbar, ScrollToTopButton } from 'components/client/';
 import { Footer } from 'components/server';
 import 'styles/globals.css';
 
@@ -20,6 +20,7 @@ export default function RootLayout({
                 </header>
                 <main>{children}</main>
                 <Footer />
+                <ScrollToTopButton />
             </body>
         </html>
     );
