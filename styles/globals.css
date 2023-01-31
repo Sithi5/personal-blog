@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply tracking-wide dark:bg-darkBackgroundColor;
+        @apply tracking-wide bg-white dark:bg-darkBlueColor;
     }
 
     h1,
@@ -14,7 +14,7 @@
     h5,
     h6,
     p {
-        @apply font-sans;
+        @apply font-sans dark:text-white;
     }
 
     h1 {

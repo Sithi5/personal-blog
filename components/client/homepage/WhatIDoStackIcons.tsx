@@ -40,7 +40,7 @@ function ReactIconsWrapper(props: ReactIconsWrapperProps) {
         <li className="p-3 cursore-pointer hover:scale-105  ease-in duration-75">
             <Link
                 target="_blank"
-                className="text-grey hover:text-primary"
+                className="text-grey hover:text-primary dark:text-white dark:hover:text-primary"
                 href={href}
             >
                 <div className="flex flex-col justify-center items-center">

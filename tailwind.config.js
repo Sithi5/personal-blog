@@ -20,6 +20,7 @@ module.exports = {
                 orangeMangalib: '#ff7400',
                 blueDirectBricoColor: '#5ed1ff',
                 darkBackgroundColor: '#3e3e42',
+                darkBlueColor: '#102a43',
             },
             keyframes: {
                 wave: {

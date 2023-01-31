@@ -30,7 +30,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <Link
             href={href}
             target="_blank"
-            className="mt-12 w-[100%] lg:w-[40%] h-[430px] bg-white rounded-lg shadow-2xl flex flex-col items-center border-[1px] border-grey hover:scale-105 ease-in duration-75"
+            className="mt-12 w-[100%] lg:w-[40%] h-[430px] bg-white rounded-lg shadow-2xl flex flex-col items-center border-[1px] border-grey hover:scale-105 ease-in duration-75 dark:bg-darkBlueColor dark:border-2 dark:border-white"
         >
             <div className=" w-[150px] h-[150px] mt-4">
                 <Image

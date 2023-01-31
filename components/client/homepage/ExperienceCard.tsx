@@ -34,7 +34,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
         <Link
             href={href}
             target="_blank"
-            className="mt-4 lg:mt-0 w-full lg:w-[30%] h-[590px] bg-white rounded-lg shadow-2xl hover:scale-105 ease-in duration-75"
+            className="mt-4 lg:mt-0 flex flex-col w-full lg:w-[30%] h-[590px] bg-white rounded-lg shadow-2xl hover:scale-105 ease-in duration-75 dark:border-2 dark:border-white"
         >
             <div
                 className={
@@ -57,7 +57,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col w-full h-full items-center pt-[40px]">
+            <div className="flex flex-col w-full h-full items-center pt-[40px] dark:bg-darkBlueColor ">
                 <h4 className="tracking-normal text-2xl lg:text-3xl pt-0 lg:pt-4 font-normal">
                     {jobTitle}
                 </h4>

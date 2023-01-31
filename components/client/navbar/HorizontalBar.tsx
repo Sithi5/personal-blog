@@ -1,11 +1,9 @@
 'use client';
 
-import PandaAvatar from 'assets/images/panda-avatar.svg';
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { DarkModeToggle } from 'components/client/';
+import { SiFoodpanda } from 'react-icons/si';
 
 type HorizontalBarProps = {
     navbarLinksList: [string, string][];
@@ -16,9 +14,9 @@ export default function HorizontalBar(props: HorizontalBarProps) {
     const { navbarLinksList, handleVerticalNav } = props;
 
     return (
-        <div className="fixed w-full h-20 bg-white shadow-xl flex justify-between items-center px-2 2xl:px-16">
+        <div className="fixed w-full h-20 bg-white dark:bg-darkBlueColor shadow-xl flex justify-between items-center px-2 2xl:px-16">
             <a href="/">
-                <Image src={PandaAvatar} alt="/" width="80" height="50" />
+                <SiFoodpanda size={65} className="dark:text-white" />
             </a>
 
             <ul className="hidden md:flex pr-4">
@@ -27,15 +25,17 @@ export default function HorizontalBar(props: HorizontalBarProps) {
                         {/* Here we use a <a> instead of Link because of Next.js 13 bug with anchor */}
                         <a key={title} href={url}>
                             <li className="ml-10 text-sm uppercase hover:border-b">
-                                {title}
+                                <p>{title}</p>
                             </li>
                         </a>
                     </>
                 ))}
-                <DarkModeToggle />
+                <li className="ml-10">
+                    <DarkModeToggle />
+                </li>
             </ul>
             <div onClick={handleVerticalNav} className="md:hidden">
-                <AiOutlineMenu size={25} />
+                <AiOutlineMenu size={25} className="dark:text-white" />
             </div>
         </div>
     );

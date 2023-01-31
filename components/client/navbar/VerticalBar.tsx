@@ -1,11 +1,13 @@
 'use client';
 
-import PandaAvatar from 'assets/images/panda-avatar.svg';
+import PandaAvatar from 'assets/images/panda-avatar.webp';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
 import ContactLinks from '../../server/utils/ContactLinks';
+import { DarkModeToggle } from 'components/client/';
+import { SiFoodpanda } from 'react-icons/si';
 
 type VerticalBarProps = {
     navbarLinksList: [string, string][];
@@ -17,11 +19,11 @@ export default function VerticalBar(props: VerticalBarProps) {
     const { navbarLinksList, handleVerticalNav, isVerticalNav } = props;
 
     return (
-        <div>
+        <>
             <div
                 className={
                     isVerticalNav
-                        ? 'fixed left-0 top-0 w-full h-full bg-black/30'
+                        ? 'fixed left-0 top-0 w-full h-full bg-black/30 dark:bg-black/40 '
                         : 'hidden'
                 }
                 onClick={handleVerticalNav}
@@ -29,25 +31,26 @@ export default function VerticalBar(props: VerticalBarProps) {
             <div
                 className={
                     isVerticalNav
-                        ? 'fixed left-0 top-0 w-[75%] sm:w-3/5 md:w-2/5 h-screen bg-white ease-in duration-500'
+                        ? 'fixed left-0 top-0 w-[75%] sm:w-3/5 md:w-2/5 h-screen bg-white dark:bg-darkBlueColor ease-in duration-500'
                         : 'fixed left-[-100%] top-0 ease-in duration-500 '
                 }
             >
                 <div className="h-full p-10 flex flex-col justify-around">
                     <div className="flex w-full items-center justify-between">
                         <Link href="/">
-                            <Image
-                                src={PandaAvatar}
-                                width="87"
-                                height="35"
-                                alt="/"
+                            <SiFoodpanda
+                                size={65}
+                                className="dark:text-white"
                             />
                         </Link>
                         <div
                             onClick={handleVerticalNav}
-                            className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                            className="rounded-full shadow-lg shadow-gray-400 dark: p-3 cursor-pointer  dark:border-2 dark:border-white"
                         >
-                            <AiOutlineClose size={25} />
+                            <AiOutlineClose
+                                size={25}
+                                className="dark:text-white "
+                            />
                         </div>
                     </div>
                     <div className="border-b border-gray-300 my-4">
@@ -57,13 +60,16 @@ export default function VerticalBar(props: VerticalBarProps) {
                         {navbarLinksList.map(([title, url]) => (
                             <Link key={title} href={url}>
                                 <li className="text-sm py-4 uppercase">
-                                    {title}
+                                    <p>{title}</p>
                                 </li>
                             </Link>
                         ))}
+                        <li className="ml-10">
+                            <DarkModeToggle />
+                        </li>
                     </ul>
                     <div className="justify-self-end">
-                        <p className="uppercase tracking-widest text-primary">
+                        <p className="uppercase tracking-widest text-primary dark:text-primary">
                             Let&apos;s Connect
                         </p>
                         <div className="pt-4">
@@ -72,6 +78,6 @@ export default function VerticalBar(props: VerticalBarProps) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
