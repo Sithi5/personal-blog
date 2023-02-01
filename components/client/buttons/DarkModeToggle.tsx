@@ -1,22 +1,26 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import MoonLogo from 'assets/logos/moon.svg';
 import SunLogo from 'assets/logos/sun.svg';
 import Image from 'next/image';
 
 export default function DarkModeToggle() {
-    const htmlElement = document.querySelector('html');
-    const [darkMode, setDarkMode] = useState(
-        htmlElement?.classList.contains('dark')
-    );
+    const htmlElement = useRef<HTMLHtmlElement | null>();
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        htmlElement.current = document.querySelector('html');
+        const htmlIsDark = htmlElement.current?.classList.contains('dark');
+        setDarkMode(htmlIsDark ? true : false);
+    }, []);
 
     function toggleDarkMode() {
-        if (htmlElement?.classList.contains('dark')) {
-            htmlElement?.classList.remove('dark');
+        if (htmlElement.current?.classList.contains('dark')) {
+            htmlElement.current.classList.remove('dark');
             setDarkMode(false);
         } else {
-            htmlElement?.classList.toggle('dark');
+            htmlElement.current?.classList.toggle('dark');
             setDarkMode(true);
         }
     }
@@ -35,7 +39,7 @@ export default function DarkModeToggle() {
                 className={
                     'w-6 h-6 relative rounded-full transition duration-500 transform ' +
                     (!darkMode
-                        ? 'bg-yellow-500 -translate-x-2'
+                        ? 'bg-yellow-500 translate-x-0'
                         : 'bg-gray-700 translate-x-full') +
                     ' p-1 text-white'
                 }

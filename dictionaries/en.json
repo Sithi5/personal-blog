@@ -1,0 +1,17 @@
+{
+    "intro": {
+        "hello": "Hi all, i&apos;m Malo",
+        "partOne": "A passionate Full Stack Software Developer",
+        "partTwo": "having an experience of building Web and Mobile applications with TypeScript / Reactjs / Next.js / Nodejs / React Native and some other cool libraries and frameworks.",
+        "contactMe": "Contact me",
+        "seeMyResume": "see my resume"
+    },
+    "navbar": {
+        "home": "Home",
+        "skills": "Skills",
+        "experiences": "Experiences",
+        "projects": "Projects",
+        "education": "Education",
+        "contactMe": "Contact Me"
+    }
+}

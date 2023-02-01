@@ -4,16 +4,12 @@ import React from 'react';
 import HorizontalBar from './HorizontalBar';
 import VerticalBar from './VerticalBar';
 
-const navbarLinksList: [string, string][] = [
-    ['Home', '/'],
-    ['Skills', '#skills'],
-    ['Experiences', '#experiences'],
-    ['Projects', '#projects'],
-    ['Education', '#education'],
-    ['Contact Me', '#contact-me'],
-];
+type NavbarProps = {
+    navbarLinksList: [string, string][];
+};
 
-export default function Navbar() {
+export default function Navbar(props: NavbarProps) {
+    const { navbarLinksList } = props;
     const [isVerticalNav, setVerticalNav] = React.useState(false);
 
     const handleVerticalNav = () => {

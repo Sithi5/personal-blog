@@ -1,20 +1,25 @@
 import React from 'react';
 import { IntroLottie } from 'components/client';
-import IntroductionText from './IntroductionText';
+import IntroTextBlock from './IntroTextBlock';
 import ContactMeButtons from './ContactMeButtons';
 import { ContactLinks } from 'components/server';
 
-export default function Intro() {
+type IntroProps = {
+    translator: (key: string) => string;
+};
+
+export default function Intro(props: IntroProps) {
+    const { translator } = props;
     return (
         <div className="animate-fade-in flex flex-col lg:flex-row justify-around px-4">
             <div className="flex flex-col lg:pt-10 lg:w-[50%] w-full">
                 <div className="px-4 lg:px-8 flex flex-col">
-                    <IntroductionText />
+                    <IntroTextBlock translator={translator} />
                     <div className="pt-8">
                         <ContactLinks />
                     </div>
                     <div className="pt-8 ">
-                        <ContactMeButtons />
+                        <ContactMeButtons translator={translator} />
                     </div>
                 </div>
             </div>

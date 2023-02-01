@@ -1,0 +1,43 @@
+import { Navbar, ScrollToTopButton } from 'components/client/';
+import { Footer } from 'components/server';
+import { getTranslator, ValidLocale } from 'i18n';
+import 'styles/globals.css';
+
+export default async function RootLayout({
+    params,
+    children,
+}: {
+    children: React.ReactNode;
+    params: { lang: string; country: string };
+}) {
+    const translator = await getTranslator(
+        `${params.lang}` as ValidLocale // our middleware ensures this is valid
+    );
+
+    const navbarLinksList: [string, string][] = [
+        [translator('navbar.home'), '/'],
+        [translator('navbar.skills'), '#skills'],
+        [translator('navbar.experiences'), '#experiences'],
+        [translator('navbar.projects'), '#projects'],
+        [translator('navbar.education'), '#education'],
+        [translator('navbar.contactMe'), '#contact-me'],
+    ];
+
+    return (
+        <html lang="en" className="">
+            {/*
+        <head /> will contain the components returned by the nearest parent
+        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+      */}
+            <head />
+            <body className="relative min-h-screen">
+                <header>
+                    <Navbar navbarLinksList={navbarLinksList} />
+                </header>
+                <main>{children}</main>
+                <Footer />
+                <ScrollToTopButton />
+            </body>
+        </html>
+    );
+}

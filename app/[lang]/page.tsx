@@ -7,13 +7,22 @@ import {
     Projects,
     ContactMe,
 } from 'components/server';
+import { getTranslator, ValidLocale } from 'i18n';
 import React from 'react';
 
-export default function Home() {
+export default async function Home({
+    params,
+}: {
+    params: { lang: string; country: string };
+}) {
+    const translator = await getTranslator(
+        `${params.lang}` as ValidLocale // our middleware ensures this is valid
+    );
+
     return (
         <div className="flex justify-center flex-col">
             <section className="pt-28 ">
-                <Intro />
+                <Intro translator={translator} />
             </section>
             <section id="skills" className="lg:pt-4">
                 <WhatIDo />
