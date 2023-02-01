@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { DarkModeToggle } from 'components/client/';

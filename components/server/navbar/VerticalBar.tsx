@@ -1,22 +1,25 @@
-'use client';
-
-import PandaAvatar from 'assets/images/panda-avatar.webp';
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
-import ContactLinks from '../../server/utils/ContactLinks';
+import ContactLinks from '../utils/ContactLinks';
 import { DarkModeToggle } from 'components/client/';
 import { SiFoodpanda } from 'react-icons/si';
+import { getTranslator, ValidLocale } from 'i18n';
 
 type VerticalBarProps = {
     navbarLinksList: [string, string][];
     handleVerticalNav: () => void;
     isVerticalNav: boolean;
+    navbarLetsConnectText: string;
 };
 
 export default function VerticalBar(props: VerticalBarProps) {
-    const { navbarLinksList, handleVerticalNav, isVerticalNav } = props;
+    const {
+        navbarLinksList,
+        handleVerticalNav,
+        isVerticalNav,
+        navbarLetsConnectText,
+    } = props;
 
     return (
         <>
@@ -70,7 +73,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                     </ul>
                     <div className="justify-self-end">
                         <p className="uppercase tracking-widest text-primary dark:text-primary">
-                            Let&apos;s Connect
+                            {navbarLetsConnectText}
                         </p>
                         <div className="pt-4">
                             <ContactLinks />

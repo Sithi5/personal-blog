@@ -1,7 +1,13 @@
 import { Navbar, ScrollToTopButton } from 'components/client/';
 import { Footer } from 'components/server';
-import { getTranslator, ValidLocale } from 'i18n';
+import { getTranslator, locales, ValidLocale } from 'i18n';
 import 'styles/globals.css';
+
+export async function generateStaticParams() {
+    return locales.map((locale) => ({
+        lang: locale,
+    }));
+}
 
 export default async function RootLayout({
     params,
@@ -32,7 +38,10 @@ export default async function RootLayout({
             <head />
             <body className="relative min-h-screen">
                 <header>
-                    <Navbar navbarLinksList={navbarLinksList} />
+                    <Navbar
+                        navbarLinksList={navbarLinksList}
+                        navbarLetsConnectText={translator('navbar.letsConnect')}
+                    />
                 </header>
                 <main>{children}</main>
                 <Footer />

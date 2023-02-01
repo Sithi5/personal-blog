@@ -7,8 +7,14 @@ import {
     Projects,
     ContactMe,
 } from 'components/server';
-import { getTranslator, ValidLocale } from 'i18n';
+import { getTranslator, locales, ValidLocale } from 'i18n';
 import React from 'react';
+
+export async function generateStaticParams() {
+    return locales.map((locale) => ({
+        lang: locale,
+    }));
+}
 
 export default async function Home({
     params,

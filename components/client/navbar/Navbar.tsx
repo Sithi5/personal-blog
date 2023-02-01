@@ -1,15 +1,15 @@
 'use client';
 
+import { HorizontalBar, VerticalBar } from 'components/server';
 import React from 'react';
-import HorizontalBar from './HorizontalBar';
-import VerticalBar from './VerticalBar';
 
 type NavbarProps = {
     navbarLinksList: [string, string][];
+    navbarLetsConnectText: string;
 };
 
 export default function Navbar(props: NavbarProps) {
-    const { navbarLinksList } = props;
+    const { navbarLinksList, navbarLetsConnectText } = props;
     const [isVerticalNav, setVerticalNav] = React.useState(false);
 
     const handleVerticalNav = () => {
@@ -26,6 +26,7 @@ export default function Navbar(props: NavbarProps) {
                 navbarLinksList={navbarLinksList}
                 handleVerticalNav={handleVerticalNav}
                 isVerticalNav={isVerticalNav}
+                navbarLetsConnectText={navbarLetsConnectText}
             />
         </div>
     );

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 export default function LanguageSwitch() {
-    const [language, setLanguage] = useState();
+    const [language, setLanguage] = useState<string>('en');
     const [showDropdown, setShowDropdown] = useState(false);
 
     return (
