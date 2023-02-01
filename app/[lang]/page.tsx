@@ -31,7 +31,7 @@ export default async function Home({
                 <Intro translator={translator} />
             </section>
             <section id="skills" className="lg:pt-4">
-                <WhatIDo />
+                <WhatIDo translator={translator} />
             </section>
             <section id="experiences" className="lg:pt-4">
                 <Experiences />

@@ -14,5 +14,8 @@
         "education": "Education",
         "contactMe": "Contact Me",
         "letsConnect": "Let's Connect"
+    },
+    "whatIDo": {
+        "h2": "What I Do"
     }
 }

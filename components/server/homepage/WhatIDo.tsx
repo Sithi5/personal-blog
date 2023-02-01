@@ -5,11 +5,17 @@ import {
     WhatIDoText,
 } from 'components/client';
 
-export default function WhatIDo() {
+type WhatIDoProps = {
+    translator: (key: string) => string;
+};
+
+export default function WhatIDo(props: WhatIDoProps) {
+    const { translator } = props;
+
     return (
         <div className="flex flex-col lg:flex-row  p-4">
             <div className="flex flex-col justify-center lg:order-2 w-full lg:w-[50%]">
-                <h2 className="">What I do</h2>
+                <h2>{translator('whatI')}</h2>
                 <WhatIDoText />
                 <WhatIDoStackIcons />
             </div>

@@ -14,5 +14,8 @@
         "education": "Éducation",
         "contactMe": "Me contacter",
         "letsConnect": "Connectons-nous"
+    },
+    "whatIDo": {
+        "h2": "Compétences"
     }
 }
