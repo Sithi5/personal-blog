@@ -15,7 +15,7 @@ export default function WhatIDo(props: WhatIDoProps) {
     return (
         <div className="flex flex-col lg:flex-row  p-4">
             <div className="flex flex-col justify-center lg:order-2 w-full lg:w-[50%]">
-                <h2>{translator('whatI')}</h2>
+                <h2>{translator('whatIDo.h2')}</h2>
                 <WhatIDoText />
                 <WhatIDoStackIcons />
             </div>
