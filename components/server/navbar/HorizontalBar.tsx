@@ -19,16 +19,13 @@ export default function HorizontalBar(props: HorizontalBarProps) {
 
             <ul className="hidden md:flex pr-4">
                 {navbarLinksList.map(([title, url]) => (
-                    <>
-                        {/* Here we use a <a> instead of Link because of Next.js 13 bug with anchor */}
-                        <a key={title} href={url}>
-                            <li className="ml-10 text-sm uppercase hover:border-b">
-                                <p>{title}</p>
-                            </li>
-                        </a>
-                    </>
+                    <a key={title} href={url}>
+                        <li className="ml-10 text-sm uppercase hover:border-b">
+                            <p>{title}</p>
+                        </li>
+                    </a>
                 ))}
-                <li className="ml-10">
+                <li key={'darkModeToggle'} className="ml-10">
                     <DarkModeToggle />
                 </li>
             </ul>

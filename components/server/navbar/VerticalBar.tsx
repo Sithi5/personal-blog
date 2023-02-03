@@ -67,7 +67,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                                 </li>
                             </Link>
                         ))}
-                        <li className="ml-10">
+                        <li key={'darkModeToggle'} className="ml-10">
                             <DarkModeToggle />
                         </li>
                     </ul>

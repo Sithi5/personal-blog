@@ -1,5 +1,5 @@
 import DarkModeToggle from './DarkModeToggle';
-import LanguageSwitch from './LanguagesToggle';
+import LanguagesToggle from './LanguagesToggle';
 import ScrollToTopButton from './ScrollToTopButton';
 
-export { ScrollToTopButton, DarkModeToggle, LanguageSwitch };
+export { ScrollToTopButton, DarkModeToggle, LanguagesToggle };
