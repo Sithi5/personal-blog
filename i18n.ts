@@ -3,35 +3,34 @@ export const defaultLocale = 'en';
 export type ValidLocale = (typeof locales)[number];
 
 export async function getTranslator(locale: ValidLocale) {
-    const dictionary = await import(`./dictionaries/${locale}.json`);
+    const dictionary = await import(`./dictionaries/${locale}.ts`);
     const defaultDictionary =
         locale !== defaultLocale
-            ? await import(`./dictionaries/${defaultLocale}.json`)
+            ? await import(`./dictionaries/${defaultLocale}.ts`)
             : '';
-    function generateTranslator(
-        key: string,
-        params?: { [key: string]: string | number }
-    ) {
-        let translation = key
-            .split('.')
-            .reduce((obj, key) => obj && obj[key], dictionary);
-        if (!translation && locale !== defaultLocale) {
-            // Back-up to default locale dictionary
-            translation = key
-                .split('.')
-                .reduce((obj, key) => obj && obj[key], defaultDictionary);
-            if (!translation) {
-                return key;
+
+    function generateTranslator(keys: string) {
+        let translation = dictionary.default;
+        for (const key of keys.split('.')) {
+            if (translation[key] === undefined) {
+                translation = undefined;
+                break;
+            } else {
+                translation = translation[key];
             }
         }
-        if (params && Object.entries(params).length) {
-            Object.entries(params).forEach(([key, value]) => {
-                translation = translation?.replace(
-                    `{{ ${key} }}`,
-                    String(value)
-                );
-            });
+        if (translation === undefined) {
+            // Check if it exist in default dictionary
+            translation = defaultDictionary.default;
+            for (const key of keys.split('.')) {
+                if (translation[key] === undefined) {
+                    return keys;
+                } else {
+                    translation = translation[key];
+                }
+            }
         }
+
         return translation;
     }
     return generateTranslator;

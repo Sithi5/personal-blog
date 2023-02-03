@@ -38,10 +38,10 @@ export default async function RootLayout({
             <head />
             <body className="relative min-h-screen">
                 <header>
-                    <Navbar
+                    {/* <Navbar
                         navbarLinksList={navbarLinksList}
                         navbarLetsConnectText={translator('navbar.letsConnect')}
-                    />
+                    /> */}
                 </header>
                 <main>{children}</main>
                 <Footer />

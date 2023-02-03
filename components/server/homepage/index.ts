@@ -1,3 +1,4 @@
+import ExperienceCard from '../../client/homepage/ExperienceCard';
 import ContactMe from './ContactMe';
 import Education from './Education';
 import Experiences from './Experiences';
@@ -12,6 +13,7 @@ export {
     Education,
     Proficiency,
     Experiences,
+    ExperienceCard,
     Projects,
     ContactMe,
 };

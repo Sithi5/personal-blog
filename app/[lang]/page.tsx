@@ -30,11 +30,11 @@ export default async function Home({
             <section className="pt-28 ">
                 <Intro translator={translator} />
             </section>
-            <section id="skills" className="lg:pt-4">
+            {/* <section id="skills" className="lg:pt-4">
                 <WhatIDo translator={translator} />
             </section>
             <section id="experiences" className="lg:pt-4">
-                <Experiences />
+                <Experiences translator={translator} />
             </section>
             <section className="lg:pt-4">
                 <Proficiency />
@@ -47,7 +47,7 @@ export default async function Home({
             </section>
             <section id="contact-me" className="lg:pt-4">
                 <ContactMe />
-            </section>
+            </section> */}
         </div>
     );
 }
