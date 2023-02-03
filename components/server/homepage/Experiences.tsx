@@ -1,6 +1,6 @@
 import {
     ExperienceCardsSlide,
-    ExperiencesTransletedDict,
+    ExperiencesTranslatedDict,
 } from 'components/client';
 import React from 'react';
 
@@ -11,41 +11,39 @@ type ExperiencesProps = {
 export default function Experiences(props: ExperiencesProps) {
     const { translator } = props;
 
-    const experienceTranslatedText: ExperiencesTransletedDict = {
-        DirectBrico: {
+    const experiencesTranslatedText: ExperiencesTranslatedDict = {
+        directBrico: {
             title: translator('experiences.directbrico.title'),
-            jobTitle: 'Engineering Manager',
-            period: 'January 2022 - March 2023',
-            companyDescription:
-                'DirectBrico is a young C2C Marketplace in the field of second-hand, which allows everyone to resell its Gardening and DIY products',
-            missionDescription:
-                '• SCRUM Master\n' +
-                '• Recruit developers\n' +
-                '• Lead-developer for the mobile application in React Native\n' +
-                '• Building and releasing the apps through IOS and Android\n' +
-                '• Build CI/CD for the app and prestashop with github action',
+            jobTitle: translator('experiences.directbrico.jobTitle'),
+            period: translator('experiences.directbrico.period'),
+            companyDescription: translator(
+                'experiences.directbrico.companyDescription'
+            ),
+            missionDescription: translator(
+                'experiences.directbrico.missionDescription'
+            ),
         },
-        Parsec: {
-            title: 'Parsec Cloud',
-            jobTitle: 'R&D Engineer',
-            period: 'Jun 2020 - Dec 2020',
-            companyDescription:
-                'Parsec allows you to share your work and data in the cloud confidentially via end-to-end encryption technology',
-            missionDescription:
-                '• Development of a data decryption/encryption process inside an SGX enclave to reinforce security\n' +
-                '• Improvement of the GUI of the software\n' +
-                '• Development of new features around the kernel\n',
+        parsec: {
+            title: translator('experiences.parsec.title'),
+            jobTitle: translator('experiences.parsec.jobTitle'),
+            period: translator('experiences.parsec.period'),
+            companyDescription: translator(
+                'experiences.parsec.companyDescription'
+            ),
+            missionDescription: translator(
+                'experiences.parsec.missionDescription'
+            ),
         },
-        Mangalib: {
-            title: 'Mangalib',
-            jobTitle: 'R&D Engineer',
-            period: 'October 2021 - today',
-            companyDescription:
-                'MangaLib allows you to store your personal manga library and to perform a quick search within it.',
-            missionDescription:
-                '• Development of the app from scratch with ReactNative\n' +
-                '• Release on the stores\n' +
-                '• Create full UI/UX\n',
+        mangalib: {
+            title: translator('experiences.mangalib.title'),
+            jobTitle: translator('experiences.mangalib.jobTitle'),
+            period: translator('experiences.mangalib.period'),
+            companyDescription: translator(
+                'experiences.mangalib.companyDescription'
+            ),
+            missionDescription: translator(
+                'experiences.mangalib.missionDescription'
+            ),
         },
     };
 
@@ -54,7 +52,7 @@ export default function Experiences(props: ExperiencesProps) {
             <h2>{translator('experiences.h2')}</h2>
             <div className="flex justify-evenly lg:flex-row flex-col flex-wrap">
                 <ExperienceCardsSlide
-                    experiencesTranslated={experienceTranslatedText}
+                    translations={experiencesTranslatedText}
                 />
             </div>
         </div>

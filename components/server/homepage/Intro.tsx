@@ -10,6 +10,7 @@ type IntroProps = {
 
 export default function Intro(props: IntroProps) {
     const { translator } = props;
+
     return (
         <div className="animate-fade-in flex flex-col lg:flex-row justify-around px-4">
             <div className="flex flex-col lg:pt-10 lg:w-[50%] w-full">

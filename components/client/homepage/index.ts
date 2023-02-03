@@ -1,9 +1,11 @@
 import EducationBlock from './EducationBlock';
 import ExperienceCardsSlide, {
-    ExperiencesTransletedDict,
+    ExperiencesTranslatedDict,
     ExperienceTranslatedText,
 } from './ExperienceCardsSlide';
-import ProficiencyBars from './ProficiencyBars';
+import ProficiencyBars, {
+    ProficiencyBarsTranslatedDict,
+} from './ProficiencyBars';
 import ProjectsCardsSlide from './ProjectsCardsSlide';
 import WhatIDoStackIcons from './WhatIDoStackIcons';
 import WhatIDoText from './WhatIDoText';
@@ -16,4 +18,8 @@ export {
     ExperienceCardsSlide,
     ProjectsCardsSlide,
 };
-export type { ExperiencesTransletedDict, ExperienceTranslatedText };
+export type {
+    ExperiencesTranslatedDict,
+    ExperienceTranslatedText,
+    ProficiencyBarsTranslatedDict,
+};

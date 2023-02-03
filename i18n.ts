@@ -3,11 +3,11 @@ export const defaultLocale = 'en';
 export type ValidLocale = (typeof locales)[number];
 
 export async function getTranslator(locale: ValidLocale) {
-    const dictionary = await import(`./dictionaries/${locale}.ts`);
+    const dictionary = await import(`./translation/${locale}.ts`);
     const defaultDictionary =
         locale !== defaultLocale
-            ? await import(`./dictionaries/${defaultLocale}.ts`)
-            : '';
+            ? await import(`./translation/${defaultLocale}.ts`)
+            : undefined;
 
     function generateTranslator(keys: string) {
         let translation = dictionary.default;
@@ -19,7 +19,11 @@ export async function getTranslator(locale: ValidLocale) {
                 translation = translation[key];
             }
         }
-        if (translation === undefined) {
+        if (
+            translation === undefined &&
+            defaultDictionary &&
+            defaultDictionary !== dictionary
+        ) {
             // Check if it exist in default dictionary
             translation = defaultDictionary.default;
             for (const key of keys.split('.')) {

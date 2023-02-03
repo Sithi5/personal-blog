@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-import { getTranslator, locales, ValidLocale } from 'i18n';
 
 type ExperienceCardProps = {
     title: string;

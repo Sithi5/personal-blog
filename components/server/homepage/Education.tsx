@@ -4,55 +4,84 @@ import FourtyTwoLogo from 'assets/logos/42-logo.svg';
 import EscRennesLogo from 'assets/logos/esc-rennes-logo.svg';
 import UniversityOfMacauLogo from 'assets/logos/university-of-macau-logo.svg';
 
-export default function Education() {
+export type EducationTranslatedText = {
+    title: string;
+    schoolDescription: string;
+    description: string;
+    period: string;
+};
+
+export type EducationTranslatedDict = {
+    [key: string]: EducationTranslatedText;
+};
+
+type EducationProps = {
+    translator: (key: string) => string;
+};
+
+export default function Educationprops(props: EducationProps) {
+    const { translator } = props;
+
+    const educationTranslatedText: EducationTranslatedDict = {
+        fourtyTwo: {
+            title: translator('education.fourtyTwo.title'),
+            schoolDescription: translator(
+                'education.fourtyTwo.schoolDescription'
+            ),
+            description: translator('education.fourtyTwo.description'),
+            period: translator('education.fourtyTwo.period'),
+        },
+        escRennes: {
+            title: translator('education.escRennes.title'),
+            schoolDescription: translator(
+                'education.escRennes.schoolDescription'
+            ),
+            description: translator('education.escRennes.description'),
+            period: translator('education.escRennes.period'),
+        },
+        universityOfMacau: {
+            title: translator('education.universityOfMacau.title'),
+            schoolDescription: translator(
+                'education.universityOfMacau.schoolDescription'
+            ),
+            description: translator('education.universityOfMacau.description'),
+            period: translator('education.universityOfMacau.period'),
+        },
+    };
+
     return (
         <div className="flex flex-col justify-around p-4">
-            <h2>Education</h2>
+            <h2>{translator('education.h2')}</h2>
             <div className="flex-1 px-8">
                 <EducationBlock
-                    title={'42 Paris'}
+                    title={educationTranslatedText.fourtyTwo.title}
                     schoolDescription={
-                        "Master's degree (RNCP level 7) in Computer Science"
+                        educationTranslatedText.fourtyTwo.schoolDescription
                     }
-                    description={
-                        '• Algorithmic and AI\n' +
-                        '• Security project\n' +
-                        '• Web project\n' +
-                        '• Virus project\n' +
-                        '• System administration'
-                    }
-                    period={'September 2017 - April 2019'}
+                    description={educationTranslatedText.fourtyTwo.description}
+                    period={educationTranslatedText.fourtyTwo.period}
                     svgImage={FourtyTwoLogo}
                 />
             </div>
             <div className="flex-1 px-8 pt-12 ">
                 <EducationBlock
                     title={'ESC Rennes'}
-                    schoolDescription={
-                        "Bachelor's degree, Economics, Finance and Management"
-                    }
-                    description={
-                        '• finance & banking systems\n' +
-                        '• corporate finance\n' +
-                        '• marketing analysis\n' +
-                        '• international management'
-                    }
-                    period={'September 2013 - April 2019'}
+                    schoolDescription={educationTranslatedText.escRennes.title}
+                    description={educationTranslatedText.escRennes.description}
+                    period={educationTranslatedText.escRennes.period}
                     svgImage={EscRennesLogo}
                 />
             </div>
             <div className="flex-1 px-8 pt-12">
                 <EducationBlock
-                    title={'University of Macau'}
+                    title={educationTranslatedText.universityOfMacau.title}
                     schoolDescription={
-                        'Finance, Banking and International Management'
+                        educationTranslatedText.universityOfMacau.title
                     }
                     description={
-                        '• Finance and banking\n' +
-                        '• International Behaviour\n' +
-                        '• International Management'
+                        educationTranslatedText.universityOfMacau.description
                     }
-                    period={'January 2016 - June 2016'}
+                    period={educationTranslatedText.universityOfMacau.period}
                     svgImage={UniversityOfMacauLogo}
                 />
             </div>

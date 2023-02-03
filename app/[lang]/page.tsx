@@ -30,24 +30,24 @@ export default async function Home({
             <section className="pt-28 ">
                 <Intro translator={translator} />
             </section>
-            {/* <section id="skills" className="lg:pt-4">
+            <section id="skills" className="lg:pt-4">
                 <WhatIDo translator={translator} />
             </section>
             <section id="experiences" className="lg:pt-4">
                 <Experiences translator={translator} />
             </section>
             <section className="lg:pt-4">
-                <Proficiency />
+                <Proficiency translator={translator} />
             </section>
             <section id="projects" className="lg:pt-4">
-                <Projects />
+                <Projects translator={translator} />
             </section>
             <section id="education" className="lg:pt-4">
-                <Education />
+                <Education translator={translator} />
             </section>
             <section id="contact-me" className="lg:pt-4">
-                <ContactMe />
-            </section> */}
+                <ContactMe translator={translator} />
+            </section>
         </div>
     );
 }

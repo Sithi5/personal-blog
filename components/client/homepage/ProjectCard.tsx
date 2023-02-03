@@ -5,7 +5,7 @@ import Image from 'next/image';
 import React from 'react';
 
 type ProjectCardProps = {
-    projectTitle: string;
+    title: string;
     projectFocus: string;
     programmingLanguage: string;
     projectDescription: string;
@@ -17,7 +17,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard(props: ProjectCardProps) {
     const {
-        projectTitle,
+        title,
         projectFocus,
         programmingLanguage,
         projectDescription,
@@ -42,7 +42,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                 />
             </div>
             <div className="flex flex-col w-full h-full items-center  pt-4 ">
-                <h3 className="text-3xl text-black  pt-0 ">{projectTitle}</h3>
+                <h3 className="text-3xl text-black  pt-0 ">{title}</h3>
                 <h4 className="tracking-normal text-1xl lg:text-2xl pt-0 font-normal">
                     {projectFocus}
                 </h4>

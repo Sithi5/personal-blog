@@ -15,62 +15,58 @@ export type ExperienceTranslatedText = {
     missionDescription: string;
 };
 
-export type ExperiencesTransletedDict = {
-    [experienceTitle: string]: ExperienceTranslatedText;
+export type ExperiencesTranslatedDict = {
+    [key: string]: ExperienceTranslatedText;
 };
 
 type ExperiencesCardsSlideProps = {
-    experiencesTranslated: ExperiencesTransletedDict;
+    translations: ExperiencesTranslatedDict;
 };
 
 export default function ExperienceCardsSlide(
     props: ExperiencesCardsSlideProps
 ) {
-    const { experiencesTranslated } = props;
+    const { translations } = props;
     return (
         <Slide triggerOnce direction="up" cascade damping={0.1}>
             <div className="flex flex-row w-full flex-wrap justify-around">
                 <ExperienceCard
-                    title={experiencesTranslated.DirectBrico.title}
-                    jobTitle={experiencesTranslated.DirectBrico.jobTitle}
+                    title={translations.directBrico.title}
+                    jobTitle={translations.directBrico.jobTitle}
                     headerGradientColorClass="bg-gradient-to-b from-black to-darkGreenDirectBricoColor"
-                    period={experiencesTranslated.DirectBrico.period}
+                    period={translations.directBrico.period}
                     href="https://www.directbrico.com/"
                     companyDescription={
-                        experiencesTranslated.DirectBrico.companyDescription
+                        translations.directBrico.companyDescription
                     }
                     svgImage={DirectBricoLogo}
                     missionDescription={
-                        experiencesTranslated.DirectBrico.missionDescription
+                        translations.directBrico.missionDescription
                     }
                 />
                 <ExperienceCard
-                    title={experiencesTranslated.Parsec.title}
+                    title={translations.parsec.title}
                     headerGradientColorClass="bg-gradient-to-b from-black to-blueParsecColor"
-                    jobTitle={experiencesTranslated.Parsec.jobTitle}
-                    period={experiencesTranslated.Parsec.period}
-                    companyDescription={
-                        experiencesTranslated.Parsec.companyDescription
-                    }
+                    jobTitle={translations.parsec.jobTitle}
+                    period={translations.parsec.period}
+                    companyDescription={translations.parsec.companyDescription}
                     svgImage={ParsecLogo}
                     href="https://parsec.cloud/"
-                    missionDescription={
-                        experiencesTranslated.Parsec.missionDescription
-                    }
+                    missionDescription={translations.parsec.missionDescription}
                 />
                 <ExperienceCard
-                    title={experiencesTranslated.Mangalib.title}
-                    jobTitle={experiencesTranslated.Mangalib.jobTitle}
+                    title={translations.mangalib.title}
+                    jobTitle={translations.mangalib.jobTitle}
                     headerGradientColorClass="bg-gradient-to-b from-black to-orangeMangalib"
-                    period={experiencesTranslated.Mangalib.period}
+                    period={translations.mangalib.period}
                     companyDescription={
-                        experiencesTranslated.Mangalib.companyDescription
+                        translations.mangalib.companyDescription
                     }
                     svgImage={MangaLibLogo}
                     imageRounded={false}
                     href="https://play.google.com/store/apps/details?id=com.mangalib&pli=1"
                     missionDescription={
-                        experiencesTranslated.Mangalib.missionDescription
+                        translations.mangalib.missionDescription
                     }
                 />
             </div>

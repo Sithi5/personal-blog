@@ -3,7 +3,12 @@ import { Emoji } from 'components/server';
 
 const footerHeight = 12;
 
-export default function Footer() {
+type FooterProps = {
+    translator: (key: string) => string;
+};
+export default function Footer(props: FooterProps) {
+    const { translator } = props;
+
     return (
         <>
             <div className={'relative bottom-0 h-' + footerHeight}></div>
@@ -13,10 +18,13 @@ export default function Footer() {
             >
                 <div className="flex flex-col justify-center p-4 items-center">
                     <p className="text-grey">
-                        Made with <Emoji symbol="❤️" label="heart" /> by Malo
-                        Boucé
+                        {translator('footer.madeWith')}{' '}
+                        <Emoji symbol="❤️" label="heart" />{' '}
+                        {translator('footer.by')}
                     </p>
-                    <p className="text-grey">(powered by next.js 13)</p>
+                    <p className="text-grey">
+                        {translator('footer.poweredBy')}
+                    </p>
                 </div>
             </footer>
         </>

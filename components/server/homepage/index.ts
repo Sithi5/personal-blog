@@ -1,5 +1,6 @@
 import ExperienceCard from '../../client/homepage/ExperienceCard';
 import ContactMe from './ContactMe';
+import { ContactMeTranslatedDict } from './ContactMeText';
 import Education from './Education';
 import Experiences from './Experiences';
 import Intro from './Intro';
@@ -17,3 +18,4 @@ export {
     Projects,
     ContactMe,
 };
+export type { ContactMeTranslatedDict };

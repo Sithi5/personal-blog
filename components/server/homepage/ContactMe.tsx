@@ -1,14 +1,25 @@
 import React from 'react';
-import ContactMeText from './ContactMeText';
+import ContactMeText, { ContactMeTranslatedDict } from './ContactMeText';
 import { ContactLinks } from 'components/server';
 import { ContactMeLottie } from 'components/client';
 
-export default function ContactMe() {
+type EducationProps = {
+    translator: (key: string) => string;
+};
+
+export default function ContactMe(props: EducationProps) {
+    const { translator } = props;
+
+    const contactMeTranslatedText: ContactMeTranslatedDict = {
+        h2: translator('contactMe.h2'),
+        contactMeText: translator('contactMe.contactMeText'),
+    };
+
     return (
         <div className="animate-fade-in flex flex-col lg:flex-row justify-around px-4">
             <div className="flex flex-col lg:pt-10 lg:w-[50%] w-full">
                 <div className="px-4 lg:px-8 flex flex-col">
-                    <ContactMeText />
+                    <ContactMeText translations={contactMeTranslatedText} />
                     <div className="pt-8">
                         <ContactLinks />
                     </div>
