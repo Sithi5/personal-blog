@@ -2,14 +2,16 @@ import React from 'react';
 import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
 import ContactLinks from '../utils/ContactLinks';
-import { DarkModeToggle } from 'components/client/';
+import { DarkModeToggle, LanguagesToggle } from 'components/client/';
 import { SiFoodpanda } from 'react-icons/si';
+import { ValidLocale } from 'i18n';
 
 type VerticalBarProps = {
     navbarLinksList: [string, string][];
     handleVerticalNav: () => void;
     isVerticalNav: boolean;
     navbarLetsConnectText: string;
+    lang: ValidLocale;
 };
 
 export default function VerticalBar(props: VerticalBarProps) {
@@ -18,6 +20,7 @@ export default function VerticalBar(props: VerticalBarProps) {
         handleVerticalNav,
         isVerticalNav,
         navbarLetsConnectText,
+        lang,
     } = props;
 
     return (
@@ -68,6 +71,9 @@ export default function VerticalBar(props: VerticalBarProps) {
                         ))}
                         <li key={'darkModeToggle'} className="ml-10">
                             <DarkModeToggle />
+                        </li>
+                        <li key={'languageToggle'} className="ml-10 py-4">
+                            <LanguagesToggle lang={lang} />
                         </li>
                     </ul>
                     <div className="justify-self-end">

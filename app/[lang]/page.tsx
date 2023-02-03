@@ -16,13 +16,15 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function Home({
-    params,
-}: {
+type HomeProps = {
     params: { lang: string; country: string };
-}) {
+};
+
+export default async function Home(props: HomeProps) {
+    const { params } = props;
+    const lang = params.lang as ValidLocale;
     const translator = await getTranslator(
-        `${params.lang}` as ValidLocale // our middleware ensures this is valid
+        lang // our middleware ensures this is valid
     );
 
     return (

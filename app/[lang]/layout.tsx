@@ -9,16 +9,15 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function RootLayout({
-    params,
-    children,
-}: {
-    children: React.ReactNode;
+type RootProps = {
     params: { lang: string; country: string };
-}) {
-    const translator = await getTranslator(
-        `${params.lang}` as ValidLocale // our middleware ensures this is valid
-    );
+    children: React.ReactNode;
+};
+
+export default async function RootLayout(props: RootProps) {
+    const { params, children } = props;
+    const lang = params.lang as ValidLocale;
+    const translator = await getTranslator(lang);
 
     const navbarLinksList: [string, string][] = [
         [translator('navbar.home'), '/'],
@@ -41,6 +40,7 @@ export default async function RootLayout({
                     <Navbar
                         navbarLinksList={navbarLinksList}
                         navbarLetsConnectText={translator('navbar.letsConnect')}
+                        lang={lang}
                     />
                 </header>
                 <main>{children}</main>
