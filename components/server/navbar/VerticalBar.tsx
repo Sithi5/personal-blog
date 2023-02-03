@@ -48,7 +48,7 @@ export default function VerticalBar(props: VerticalBarProps) {
                                 className="dark:text-white"
                             />
                         </Link>
-                        <div
+                        <button
                             onClick={handleVerticalNav}
                             className="rounded-full shadow-lg shadow-gray-400 dark: p-3 cursor-pointer  dark:border-2 dark:border-white"
                         >
@@ -56,18 +56,25 @@ export default function VerticalBar(props: VerticalBarProps) {
                                 size={25}
                                 className="dark:text-white "
                             />
-                        </div>
+                        </button>
                     </div>
                     <div className="border-b border-gray-300 my-4">
                         <p className="w-[85%] md:w-[90%] py-4">Malo Boucé</p>
                     </div>
                     <ul className="py-4 flex flex-col">
                         {navbarLinksList.map(([title, url]) => (
-                            <a key={title} href={url}>
-                                <li className="text-sm py-4 uppercase">
-                                    <p>{title}</p>
-                                </li>
-                            </a>
+                            <button
+                                onClick={() => {
+                                    handleVerticalNav();
+                                }}
+                                key={title}
+                            >
+                                <a href={url}>
+                                    <li className="text-sm py-4 uppercase">
+                                        <p>{title}</p>
+                                    </li>
+                                </a>
+                            </button>
                         ))}
                         <li key={'darkModeToggle'} className="ml-10">
                             <DarkModeToggle />
