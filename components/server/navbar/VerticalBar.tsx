@@ -4,7 +4,6 @@ import { AiOutlineClose } from 'react-icons/ai';
 import ContactLinks from '../utils/ContactLinks';
 import { DarkModeToggle } from 'components/client/';
 import { SiFoodpanda } from 'react-icons/si';
-import { getTranslator, ValidLocale } from 'i18n';
 
 type VerticalBarProps = {
     navbarLinksList: [string, string][];

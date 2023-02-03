@@ -1,5 +1,4 @@
 import React from 'react';
-import { Emoji } from 'components/server';
 import Link from 'next/link';
 
 export type ContactMeTranslatedDict = {
