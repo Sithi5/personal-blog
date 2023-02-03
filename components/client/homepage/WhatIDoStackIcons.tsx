@@ -24,8 +24,6 @@ import {
     FaYarn,
 } from 'react-icons/fa';
 import { TbBrandReactNative } from 'react-icons/tb';
-import { DiCss3, DiJavascript1 } from 'react-icons/Di';
-import { GrMysql } from 'react-icons/Gr';
 import { IoLogoFirebase } from 'react-icons/io5';
 
 type ReactIconsWrapperProps = {
@@ -61,8 +59,9 @@ export default function WhatIDoStackIcons() {
                     text={'TypeScript'}
                     href="https://www.typescriptlang.org/"
                 />
+                {/* Change icon below */}
                 <ReactIconsWrapper
-                    ReactIcon={<DiJavascript1 size={50} />}
+                    ReactIcon={<SiTypescript size={50} />}
                     text={'JavaScript'}
                     href="https://www.javascript.com/"
                 />
@@ -106,8 +105,9 @@ export default function WhatIDoStackIcons() {
                     text={'TailwindCSS'}
                     href="https://tailwindcss.com/"
                 />
+                {/* Change icon below */}
                 <ReactIconsWrapper
-                    ReactIcon={<DiCss3 size={50} />}
+                    ReactIcon={<SiTailwindcss size={50} />}
                     text={'CSS3'}
                     href="https://developer.mozilla.org/fr/docs/Web/CSS"
                 />
@@ -126,8 +126,9 @@ export default function WhatIDoStackIcons() {
                     text={'Nodejs'}
                     href="https://nodejs.org/en/"
                 />
+                {/* Change icon below */}
                 <ReactIconsWrapper
-                    ReactIcon={<GrMysql size={50} />}
+                    ReactIcon={<IoLogoFirebase size={50} />}
                     text={'MySQL'}
                     href="https://www.mysql.com/fr/"
                 />
