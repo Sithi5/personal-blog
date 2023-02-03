@@ -7,6 +7,7 @@ import {
     SiC,
     SiCplusplus,
     SiGnubash,
+    SiMysql,
     SiNextdotjs,
     SiRust,
     SiTailwindcss,
@@ -15,6 +16,7 @@ import {
 
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
 import {
+    FaCss3Alt,
     FaDocker,
     FaNodeJs,
     FaNpm,
@@ -24,7 +26,7 @@ import {
     FaYarn,
 } from 'react-icons/fa';
 import { TbBrandReactNative } from 'react-icons/tb';
-import { IoLogoFirebase } from 'react-icons/io5';
+import { IoLogoFirebase, IoLogoJavascript } from 'react-icons/io5';
 
 type ReactIconsWrapperProps = {
     ReactIcon: ReactNode;
@@ -59,9 +61,8 @@ export default function WhatIDoStackIcons() {
                     text={'TypeScript'}
                     href="https://www.typescriptlang.org/"
                 />
-                {/* Change icon below */}
                 <ReactIconsWrapper
-                    ReactIcon={<SiTypescript size={50} />}
+                    ReactIcon={<IoLogoJavascript size={50} />}
                     text={'JavaScript'}
                     href="https://www.javascript.com/"
                 />
@@ -105,9 +106,8 @@ export default function WhatIDoStackIcons() {
                     text={'TailwindCSS'}
                     href="https://tailwindcss.com/"
                 />
-                {/* Change icon below */}
                 <ReactIconsWrapper
-                    ReactIcon={<SiTailwindcss size={50} />}
+                    ReactIcon={<FaCss3Alt size={50} />}
                     text={'CSS3'}
                     href="https://developer.mozilla.org/fr/docs/Web/CSS"
                 />
@@ -128,7 +128,7 @@ export default function WhatIDoStackIcons() {
                 />
                 {/* Change icon below */}
                 <ReactIconsWrapper
-                    ReactIcon={<IoLogoFirebase size={50} />}
+                    ReactIcon={<SiMysql size={50} />}
                     text={'MySQL'}
                     href="https://www.mysql.com/fr/"
                 />
