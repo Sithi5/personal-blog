@@ -63,11 +63,11 @@ export default function VerticalBar(props: VerticalBarProps) {
                     </div>
                     <ul className="py-4 flex flex-col">
                         {navbarLinksList.map(([title, url]) => (
-                            <Link key={title} href={url}>
+                            <a key={title} href={url}>
                                 <li className="text-sm py-4 uppercase">
                                     <p>{title}</p>
                                 </li>
-                            </Link>
+                            </a>
                         ))}
                         <li key={'darkModeToggle'} className="ml-10">
                             <DarkModeToggle />
