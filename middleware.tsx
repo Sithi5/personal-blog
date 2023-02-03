@@ -42,17 +42,6 @@ export function middleware(request: NextRequest) {
                 new URL(`/${defaultLocale}${pathname}`, request.url)
             );
         }
-    } else if (pathname === `/${defaultLocale}`) {
-        // redirect to the root path
-        return NextResponse.redirect(
-            new URL(
-                pathname.replace(
-                    `/${defaultLocale}`,
-                    pathname.startsWith('/') ? '/' : ''
-                ),
-                request.url
-            )
-        );
     }
 }
 
