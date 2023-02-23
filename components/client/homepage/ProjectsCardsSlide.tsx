@@ -8,22 +8,22 @@ import CrimeHackerIcon from '/assets/images/crime-hacker-icon.svg';
 import ExpertSystemIcon from '/assets/images/expert-system.svg';
 import InceptionIcon from '/assets/images/inception.svg';
 
-export type projectsTranslatedText = {
+export type ProjectTranslatedText = {
     title: string;
     projectFocus: string;
     programmingLanguage: string;
     projectDescription: string;
 };
 
-export type projectsTranslatedDict = {
-    [key: string]: projectsTranslatedText;
+export type ProjectsTranslatedDict = {
+    [key: string]: ProjectTranslatedText;
 };
 
-type projectsCardsSlideProps = {
-    translations: projectsTranslatedDict;
+type ProjectsCardsSlideProps = {
+    translations: ProjectsTranslatedDict;
 };
 
-export default function ProjectsCardsSlide(props: projectsCardsSlideProps) {
+export default function ProjectsCardsSlide(props: ProjectsCardsSlideProps) {
     const { translations } = props;
 
     return (

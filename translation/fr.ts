@@ -98,6 +98,23 @@ const fr = {
                 'Ce projet vise à introduire les bases de Kubernetes en mettant en place des environnements virtuels utilisant Vagrant, K3s et K3d avec Argo CD.',
         },
     },
+    certifications: {
+        h2: 'Badges, Réalisations Et Certifications',
+        createAndManageCloudResources: {
+            title: 'Create and Manage Cloud Resources',
+            certificationFocus: 'Google Cloud',
+            programmingLanguage: 'Cloud Engineer',
+            certificationDescription:
+                "Grâce au programme de badges de compétences 'Create and Manage Cloud Resources' de Google Cloud, j'ai acquis la maîtrise de l'utilisation des commandes gcloud et de Cloud Shell, de la création de machines virtuelles, du déploiement d'applications conteneurisées avec Kubernetes Engine et de la configuration de load balancers.",
+        },
+        googleCloudEssentials: {
+            title: 'Google Cloud Essentials',
+            certificationFocus: 'Google Cloud',
+            programmingLanguage: 'Cloud Engineer',
+            certificationDescription:
+                "Grâce à ce badge, j'ai acquis une expérience pratique des outils et services essentiels de Google Cloud, notamment l'écriture de commandes Cloud Shell, le déploiement de machines virtuelles, l'exécution d'applications sur Kubernetes Engine et l'utilisation de load balancers.",
+        },
+    },
     education: {
         h2: 'Éducation',
         fourtyTwo: {

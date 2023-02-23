@@ -1,6 +1,5 @@
 import React from 'react';
-import { ProjectsCardsSlide } from 'components/client';
-import { projectsTranslatedDict } from 'components/client/homepage/ProjectsCardsSlide';
+import { ProjectsCardsSlide, ProjectsTranslatedDict } from 'components/client';
 
 type ProjectsProps = {
     translator: (key: string) => string;
@@ -9,7 +8,7 @@ type ProjectsProps = {
 export default function Projects(props: ProjectsProps) {
     const { translator } = props;
 
-    const projectsTranslatedText: projectsTranslatedDict = {
+    const projectsTranslatedText: ProjectsTranslatedDict = {
         gomoku: {
             title: translator('projects.gomoku.title'),
             projectFocus: translator('projects.gomoku.projectFocus'),

@@ -6,6 +6,7 @@ import {
     Experiences,
     Projects,
     ContactMe,
+    Certifications,
 } from 'components/server';
 import { getTranslator, locales, ValidLocale } from 'i18n';
 import React from 'react';
@@ -38,14 +39,17 @@ export default async function Home(props: HomeProps) {
             <section id="experiences" className="lg:pt-4">
                 <Experiences translator={translator} />
             </section>
-            <section className="lg:pt-4">
+            <section id="proficiency" className="lg:pt-4">
                 <Proficiency translator={translator} />
             </section>
-            <section id="projects" className="lg:pt-4">
-                <Projects translator={translator} />
+            <section id="certifications" className="lg:pt-4">
+                <Certifications translator={translator} />
             </section>
             <section id="education" className="lg:pt-4">
                 <Education translator={translator} />
+            </section>
+            <section id="projects" className="lg:pt-4">
+                <Projects translator={translator} />
             </section>
             <section id="contact-me" className="lg:pt-4">
                 <ContactMe translator={translator} />
