@@ -49,7 +49,7 @@ const en = {
         },
         mangalib: {
             title: 'Mangalib',
-            jobTitle: 'R&D Engineer',
+            jobTitle: 'Founder & Developer',
             period: 'October 2021 - today',
             companyDescription:
                 'MangaLib provides a personal manga library management solution, enabling users to efficiently store and search through their manga collection.',
