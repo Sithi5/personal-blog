@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-unresolved
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar, ScrollToTopButton } from 'components/client/';
 import { Footer } from 'components/server';
 import { getTranslator, locales, ValidLocale } from 'i18n';
