@@ -128,7 +128,7 @@ const en = {
                 '• Web projects\n' +
                 '• Virus projects\n' +
                 '• System administration',
-            period: 'September 2017 - April 2019',
+            period: 'September 2019 - April 2023',
         },
         escRennes: {
             title: 'ESC Rennes',
