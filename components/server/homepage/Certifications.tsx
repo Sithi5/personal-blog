@@ -40,8 +40,6 @@ export default function Certifications(props: CertificationsProps) {
         },
     };
 
-    console.log(certificationsTranslatedText);
-
     return (
         <div className="flex flex-col justify-center p-4  w-full animate-fade-in ">
             <h2>{translator('certifications.h2')}</h2>
