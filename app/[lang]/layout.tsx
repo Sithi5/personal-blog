@@ -2,7 +2,6 @@ import { Navbar, ScrollToTopButton } from 'components/client/';
 import { Footer } from 'components/server';
 import { getTranslator, locales, ValidLocale } from 'i18n';
 import 'styles/globals.css';
-import { Analytics } from '@vercel/analytics/react';
 
 export async function generateStaticParams() {
     return locales.map((locale) => ({
@@ -45,7 +44,6 @@ export default async function RootLayout(props: RootProps) {
                     />
                 </header>
                 <main>{children}</main>
-                <Analytics />
                 <Footer translator={translator} />
                 <ScrollToTopButton />
             </body>
