@@ -22,6 +22,11 @@ function findBestMatchingLocale(acceptLangHeader: string) {
 export function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
+    // Exclude /api path from localization middleware
+    if (pathname.startsWith('/api/')) {
+        return NextResponse.next();
+    }
+
     // Check if the pathname is missing a valid locale
     const pathnameIsMissingValidLocale = locales.every((locale) => {
         return !(
