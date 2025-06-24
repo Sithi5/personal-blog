@@ -28,9 +28,6 @@ export default function ContactMeText(props: ContactMeTextProps) {
                 {translations.contactMeText}
             </p>
             <h3 className="lg:text-3xl text-grey pt-4">
-                <Link href="tel:+33685546067">+33 6 85 54 60 67</Link>
-            </h3>
-            <h3 className="lg:text-3xl text-grey pt-4">
                 <Link href="mailto:ma.sithis@gmail.com">
                     ma.sithis@gmail.com
                 </Link>
