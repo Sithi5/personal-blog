@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import fs from 'fs';
 
-export async function GET(request: Request) {
+export async function GET() {
     const filePath = path.join(
         process.cwd(),
         'public',
@@ -15,7 +15,7 @@ export async function GET(request: Request) {
     try {
         const fileContents = fs.readFileSync(filePath);
 
-        return new NextResponse(fileContents, {
+        return new NextResponse(new Uint8Array(fileContents), {
             status: HttpStatusCode.OK,
             headers: {
                 'Content-Disposition': `attachment; filename="${fileName}"`,

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Lottie from 'react-lottie';
+import LottiePlayer from './LottiePlayer';
 
 import * as animationData from 'assets/lotties/ContactMeLottie.json';
 
@@ -12,5 +12,7 @@ export default function ContactMeLottie() {
         animationData: animationData,
     };
 
-    return <Lottie options={defaultOptions} isClickToPauseDisabled={true} />;
+    return (
+        <LottiePlayer options={defaultOptions} isClickToPauseDisabled={true} />
+    );
 }

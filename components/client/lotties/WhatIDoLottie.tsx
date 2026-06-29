@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Lottie from 'react-lottie';
+import LottiePlayer from './LottiePlayer';
 import { Slide } from 'react-awesome-reveal';
 
 import * as animationData from 'assets/lotties/WhatIDoLottie.json';
@@ -15,7 +15,10 @@ export default function WhatIDoLottie() {
 
     return (
         <Slide triggerOnce direction="left">
-            <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
+            <LottiePlayer
+                options={defaultOptions}
+                isClickToPauseDisabled={true}
+            />
         </Slide>
     );
 }
