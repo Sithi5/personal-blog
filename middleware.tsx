@@ -22,8 +22,8 @@ function findBestMatchingLocale(acceptLangHeader: string) {
 export function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
-    // Exclude /api path from localization middleware
-    if (pathname.startsWith('/api/')) {
+    // Exclude /api and /mangalib paths from localization middleware
+    if (pathname.startsWith('/api/') || pathname.startsWith('/mangalib/')) {
         return NextResponse.next();
     }
 
@@ -52,5 +52,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
     // do not localize next.js paths
-    matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)'],
+    matcher: [
+        '/((?!api|mangalib|_next/static|_next/image|assets|favicon.ico|sw.js).*)',
+    ],
 };
