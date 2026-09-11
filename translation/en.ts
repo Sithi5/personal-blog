@@ -153,8 +153,6 @@ const en = {
     },
     contactMe: {
         h2: 'Contact Me',
-        contactMeText:
-            'If you have any questions or just want to say hi, my inbox is open for all.',
     },
     footer: {
         madeWith: 'Made with',

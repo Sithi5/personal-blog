@@ -150,8 +150,6 @@ const fr = {
     },
     contactMe: {
         h2: 'Me contacter',
-        contactMeText:
-            'Si vous avez des questions ou si vous voulez simplement dire bonjour, ma boîte de réception est ouverte à tous.',
     },
     footer: {
         madeWith: 'Fait avec',

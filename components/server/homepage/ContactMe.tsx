@@ -12,7 +12,6 @@ export default function ContactMe(props: EducationProps) {
 
     const contactMeTranslatedText: ContactMeTranslatedDict = {
         h2: translator('contactMe.h2'),
-        contactMeText: translator('contactMe.contactMeText'),
     };
 
     return (
