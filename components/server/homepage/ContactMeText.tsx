@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 export type ContactMeTranslatedDict = {
     h2: string;
@@ -27,11 +26,6 @@ export default function ContactMeText(props: ContactMeTextProps) {
             <p className="tracking-normal text-grey text-1xl lg:text-2xl font-extralight">
                 {translations.contactMeText}
             </p>
-            <h3 className="lg:text-3xl text-grey pt-4">
-                <Link href="mailto:ma.sithis@gmail.com">
-                    ma.sithis@gmail.com
-                </Link>
-            </h3>
         </>
     );
 }

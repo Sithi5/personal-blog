@@ -1,7 +1,3 @@
-import Link from 'next/link';
-
-const CONTACT_EMAIL = 'ma.sithis@gmail.com';
-
 export default function MangaLibDeleteAccountPage() {
     return (
         <main className="mx-auto flex min-h-screen max-w-xl flex-col justify-center px-6 py-16">
@@ -17,25 +13,11 @@ export default function MangaLibDeleteAccountPage() {
                     data and your entire manga library will be permanently
                     removed from our systems. This action cannot be undone.
                 </p>
-                <p className="mb-8 leading-relaxed text-gray-600 dark:text-gray-300">
+                <p className="leading-relaxed text-gray-600 dark:text-gray-300">
                     To request deletion of your account and associated data,
-                    please contact us by email. We will process your request and
-                    confirm once your data has been deleted.
-                </p>
-                <Link
-                    href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('MangaLib account deletion request')}&body=${encodeURIComponent('Hello,\n\nI would like to delete my MangaLib account and all associated data.\n\nAccount email:\n\nThank you.')}`}
-                    className="inline-flex items-center justify-center rounded-lg bg-orangeMangalib px-6 py-3 font-medium text-white transition hover:opacity-90"
-                >
-                    Request account deletion
-                </Link>
-                <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-                    Or email us directly at{' '}
-                    <a
-                        href={`mailto:${CONTACT_EMAIL}`}
-                        className="text-orangeMangalib underline"
-                    >
-                        {CONTACT_EMAIL}
-                    </a>
+                    open MangaLib, go to Settings, then choose Delete account.
+                    We will process your request and confirm once your data has
+                    been deleted.
                 </p>
             </div>
         </main>
